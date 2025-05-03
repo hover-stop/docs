@@ -1,4 +1,5 @@
 site_name: HoverStop Documentation
+site_url: https://hover-stop.github.io/docs/
 
 nav:
   - Home: index.md
@@ -8,3 +9,10 @@ nav:
   - Hardware Configuration: hardware-configuration.md
   - Design Guides: design-guides.md
   - Style Guides: style-guides.md
+
+extra:
+  logo: reference/Logo.png
+  favicon: site/img/favicon.ico
+
+extra_css:
+  - docs/custom.css

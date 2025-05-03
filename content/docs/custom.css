@@ -1,0 +1,47 @@
+/* Custom CSS for HoverStop Documentation */
+
+/* Import the purchased fonts */
+@font-face {
+  font-family: "UngapBlocks";
+  src: url('../reference/MyWebfontsKit/webFonts/UngapBlocks/font.woff2') format('woff2'),
+       url('../reference/MyWebfontsKit/webFonts/UngapBlocks/font.woff') format('woff');
+}
+
+/* Apply the color palette */
+:root {
+  --primary-color: #003049;
+  --secondary-color: #D62828;
+  --accent-color: #F77F00;
+  --background-color: #FCBF49;
+  --text-color: #EAE287;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Logo */
+nav.navbar {
+  background-color: var(--primary-color);
+}
+
+nav.navbar a {
+  color: var(--text-color);
+}
+
+/* Title and H1 */
+h1, .site-name {
+  font-family: "UngapBlocks", sans-serif;
+  color: var(--secondary-color);
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
