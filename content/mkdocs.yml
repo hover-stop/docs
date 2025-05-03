@@ -1,0 +1,10 @@
+site_name: HoverStop Documentation
+
+nav:
+  - Home: index.md
+  - Build Guides: build-guides.md
+  - Manuals: manuals.md
+  - Technical Data: technical-data.md
+  - Hardware Configuration: hardware-configuration.md
+  - Design Guides: design-guides.md
+  - Style Guides: style-guides.md
