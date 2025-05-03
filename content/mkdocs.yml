@@ -11,8 +11,13 @@ nav:
   - Style Guides: style-guides.md
 
 extra:
-  logo: reference/Logo.png
-  favicon: site/img/favicon.ico
+  logo: assets/images/Logo.png
+  favicon: assets/images/Logo.png
 
 extra_css:
-  - docs/custom.css
+  - assets/css/custom.css
+
+include:
+  - assets/fonts/**
+  - assets/images/**
+  - assets/css/**
