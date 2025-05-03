@@ -3,8 +3,8 @@
 /* Import the purchased fonts */
 @font-face {
   font-family: "UngapBlocks";
-  src: url('../reference/MyWebfontsKit/webFonts/UngapBlocks/font.woff2') format('woff2'),
-       url('../reference/MyWebfontsKit/webFonts/UngapBlocks/font.woff') format('woff');
+  src: url('../assets/fonts/UngapBlocks/font.woff2') format('woff2'),
+       url('../assets/fonts/UngapBlocks/font.woff') format('woff');
 }
 
 /* Apply the color palette */
