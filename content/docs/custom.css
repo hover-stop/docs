@@ -45,3 +45,8 @@ a {
 a:hover {
   color: var(--secondary-color);
 }
+
+/* Override the bg-primary class to update the top banner background color */
+.bg-primary {
+  background-color: #D62828 !important;
+}
