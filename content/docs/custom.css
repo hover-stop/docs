@@ -24,7 +24,7 @@ body {
 
 /* Header and Logo */
 nav.navbar {
-  background-color: var(--primary-color);
+  background-color: #D62828; /* Updated to match the specified color */
 }
 
 nav.navbar a {
