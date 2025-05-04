@@ -1,21 +1,21 @@
 {% extends "base.html" %}
 
 {% block header %}
-<link rel="stylesheet" href="/docs/assets/css/custom.css">
+<link rel="stylesheet" href="{{ config.site_url }}/assets/css/custom.css">
 <header>
-    <img src="/assets/img/logo.png" alt="HoverStop Logo">
+    <img src="{{ config.site_url }}/assets/img/logo.png" alt="HoverStop Logo">
 </header>
 <nav>
-    <a href="/docs/content/index.html">Home</a>
-    <a href="/docs/content/technical-data/index.html">Technical Data</a>
-    <a href="/docs/content/build-guides/index.html">Build Guides</a>
-    <a href="/docs/content/manuals/index.html">Manuals</a>
-    <a href="/docs/content/brand-guidelines/index.html">Brand Guidelines</a>
+    <a href="{{ config.site_url }}/">Home</a>
+    <a href="{{ config.site_url }}/content/technical-data/">Technical Data</a>
+    <a href="{{ config.site_url }}/content/build-guides/">Build Guides</a>
+    <a href="{{ config.site_url }}/content/manuals/">Manuals</a>
+    <a href="{{ config.site_url }}/content/brand-guidelines/">Brand Guidelines</a>
 </nav>
 {% endblock %}
 
 {% block content %}
 <div class="container-lg px-3 my-5 markdown-body">
-    {{ content }}
+    {{ page.content }}
 </div>
 {% endblock %}

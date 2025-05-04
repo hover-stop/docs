@@ -26,3 +26,4 @@ extra_css:
   - assets/css/custom.css
 extra_javascript:
   - assets/js/custom.js
+use_directory_urls: true
