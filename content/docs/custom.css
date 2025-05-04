@@ -50,3 +50,8 @@ a:hover {
 .bg-primary {
   background-color: #D62828 !important;
 }
+
+/* Update all headers to use the primary blue color */
+h1, h2, h3, h4, h5, h6 {
+  color: #003049;
+}
