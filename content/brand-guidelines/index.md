@@ -1,3 +1,7 @@
+---
+layout: default
+title: Brand Guidelines
+---
 # Brand Guidelines
 
 ## Logo

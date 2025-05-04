@@ -1,3 +1,8 @@
+---
+layout: default
+title: Welcome to HoverStop Documentation
+---
+
 # Welcome to HoverStop Documentation
 
 HoverStop Documentation provides all the resources you need to understand and work with HoverStop products. Use the links below to navigate:

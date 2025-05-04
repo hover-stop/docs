@@ -1,0 +1,21 @@
+title: HoverStop Documentation
+description: Documentation for HoverStop products
+baseurl: "/docs"
+url: "https://hover-stop.github.io"
+
+# Build settings
+markdown: kramdown
+defaults:
+  - 
+    scope:
+      path: "" # all files
+    values:
+      layout: "default"
+
+# Exclude MkDocs files from Jekyll build
+exclude:
+  - mkdocs.yml
+  - overrides/
+  - "content/brand guidelines/"
+  - "content/build guides/"
+  - "content/technical data/"

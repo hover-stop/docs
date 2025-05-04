@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="HoverStop Logo">
+  </header>
+  <nav>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/content/technical-data/' | relative_url }}">Technical Data</a>
+    <a href="{{ '/content/build-guides/' | relative_url }}">Build Guides</a>
+    <a href="{{ '/content/manuals/' | relative_url }}">Manuals</a>
+    <a href="{{ '/content/brand-guidelines/' | relative_url }}">Brand Guidelines</a>
+  </nav>
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
