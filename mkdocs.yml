@@ -23,6 +23,6 @@ theme:
     accent: "orange"
   custom_dir: overrides
 extra_css:
-  - css/custom.css
+  - assets/css/custom.css
 extra_javascript:
-  - js/custom.js
+  - assets/js/custom.js
