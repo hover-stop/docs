@@ -24,7 +24,7 @@ Our secondary color palette provides additional options for backgrounds, accents
 
 - **Light Blue**: <span style="display:inline-block; width:20px; height:20px; background-color:#8ECAE6; border:1px solid #003049; vertical-align:middle; margin-right:5px;"></span> `#8ECAE6` 
 - **Pale Blue**: <span style="display:inline-block; width:20px; height:20px; background-color:#CFE8EF; border:1px solid #003049; vertical-align:middle; margin-right:5px;"></span> `#CFE8EF`
-- **Teal Green**: <span style="display:inline-block; width:20px; height:20px; background-color:#219EBC; border:1px solid #003049; vertical-align:middle; margin-right:5px;"></span> `#219EBC`
+- **Royal Marine Green**: <span style="display:inline-block; width:20px; height:20px; background-color:#005E45; border:1px solid #003049; vertical-align:middle; margin-right:5px;"></span> `#005E45`
 - **Light Sand**: <span style="display:inline-block; width:20px; height:20px; background-color:#F2E8CF; border:1px solid #003049; vertical-align:middle; margin-right:5px;"></span> `#F2E8CF`
 - **Terracotta**: <span style="display:inline-block; width:20px; height:20px; background-color:#E76F51; border:1px solid #003049; vertical-align:middle; margin-right:5px;"></span> `#E76F51`
 - **Cool Gray**: <span style="display:inline-block; width:20px; height:20px; background-color:#E0E0E0; border:1px solid #003049; vertical-align:middle; margin-right:5px;"></span> `#E0E0E0`
@@ -32,7 +32,7 @@ Our secondary color palette provides additional options for backgrounds, accents
 #### Usage Guidelines for Secondary Colors
 - Use secondary colors to complement, not replace, the primary palette
 - Light Blue and Pale Blue work well for section backgrounds and callout boxes
-- Teal Green can be used for secondary buttons or links
+- Royal Marine Green can be used for secondary buttons or links
 - Light Sand provides a subtle alternative to white backgrounds
 - Terracotta offers an alternative accent color for highlighting important elements
 - Cool Gray is ideal for borders, dividers, and subtle UI elements
