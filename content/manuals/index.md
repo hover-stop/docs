@@ -19,8 +19,7 @@ title: Manuals
 
 | Version | Date | Description of Change | Changed By |
 | ----- | ----- | ----- | ----- |
-| 1.0 | 03/05/25 | Initial release | HoverStop Docs Team |
-|  |  |  |  |
+| 1.0 | 3 May 25 | Initial release | HoverStop Docs Team |
 
 </details>
 

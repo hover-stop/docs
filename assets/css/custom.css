@@ -52,6 +52,8 @@ body {
     margin: 0 auto;
     min-height: calc(100vh - 150px);
     position: relative;
+    /* Added to ensure proper height calculation */
+    height: auto;
 }
 
 main {
@@ -72,8 +74,10 @@ main.with-sidebar {
     background-color: var(--blue-pale);
     padding: 2rem 2rem 2rem 1rem; /* Increased right padding to 2rem */
     position: absolute;
-    height: auto;
-    min-height: calc(100vh - 150px);
+    /* Changed to ensure sidebar extends to match content */
+    height: 100%;
+    /* Remove min-height which was causing truncation */
+    /* min-height: calc(100vh - 150px); */
     overflow-y: auto;
     border-right: 1px solid var(--gray-cool);
     left: 0; /* Position at the very left edge */

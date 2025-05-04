@@ -59,5 +59,32 @@
       </div>
     </main>
   </div>
+
+  <script>
+    // Function to adjust sidebar height to match content
+    function adjustSidebarHeight() {
+      const sidebar = document.querySelector('.sidebar');
+      const content = document.querySelector('.content-wrapper');
+      
+      if (sidebar && content) {
+        // Set sidebar height to match content height
+        sidebar.style.height = content.offsetHeight + 'px';
+      }
+    }
+    
+    // Run on page load
+    document.addEventListener('DOMContentLoaded', adjustSidebarHeight);
+    
+    // Also run when details elements are toggled (for collapsible sections)
+    document.querySelectorAll('details').forEach(detail => {
+      detail.addEventListener('toggle', () => {
+        // Small delay to allow content to expand/collapse
+        setTimeout(adjustSidebarHeight, 50);
+      });
+    });
+    
+    // Run when window is resized
+    window.addEventListener('resize', adjustSidebarHeight);
+  </script>
 </body>
 </html>
