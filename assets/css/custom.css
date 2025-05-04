@@ -259,3 +259,15 @@ th {
         margin-left: 0;
     }
 }
+
+/* Page content styling */
+.page-content h1:first-of-type {
+    margin-top: 0; /* Remove extra top margin from first heading */
+}
+
+/* Hide duplicate navigation links that appear in content */
+.page-content ul li a[href$="/basic-throttle/"],
+.page-content ul li a[href$="/advanced-throttle/"] {
+    text-decoration: none; /* Keep links visible but style them differently */
+    color: var(--green-marine);
+}

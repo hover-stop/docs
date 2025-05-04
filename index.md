@@ -15,10 +15,6 @@ If you want to support us, we would welcome your input!
 All we ask is that you read some of the general guidance below to help us keep our quality bar high and the content accessable to all users!
 
 Don't worry if the engineering part of the project isn't your thing, your input is still welcome and if you want to help cover some of the overheads of the group, consider buying us a coffe or two using this link:
-
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="engines" data-color="#FFDD00" data-emoji=""  data-font="Lato" data-text="Help us out!" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-
-
 <details markdown="1">
 <summary><strong>Legal & Licensing Information</strong></summary>
 
@@ -60,6 +56,9 @@ HoverStop designs and documentation are released under the following terms:
 
 For questions about licensing or commercial use, please contact us at [contact email].
 </details>
+
+<details markdown="1">
+<summary><strong>Legal & Licensing Information</strong></summary>
 
 ## General Guidelines
 
@@ -105,3 +104,6 @@ For times use 24h format and include the timezone (i.e. 1930(UTC-7) or 1930PT).
 - **Feedback Loop**: When documenting a new feature or design, include the reasoning and community discussion that led to its development.
 - **Iterative Improvement**: Mark documentation with version numbers and maintain a changelog to track significant updates.
 - **Peer Review**: Submit significant documentation changes for community review before finalizing.
+</details>
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="engines" data-color="#FFDD00" data-emoji=""  data-font="Lato" data-text="Help us out!" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>

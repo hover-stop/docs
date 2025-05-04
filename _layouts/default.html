@@ -54,7 +54,9 @@
     {% endif %}
     
     <main {% if section_pages.size > 1 %}class="with-sidebar"{% endif %}>
-      {{ content }}
+      <div class="page-content">
+        {{ content }}
+      </div>
     </main>
   </div>
 </body>
