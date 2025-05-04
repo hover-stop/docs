@@ -6,7 +6,8 @@
     --secondary-color: #D62828;
     --accent-color: #F77F00;
     --highlight-color: #FCBF49;
-    --background-color: #EAE2B7;
+    --background-color: #ffffff;
+    --text-color: #333333;
 }
 
 /* Font-face declarations */
@@ -27,12 +28,19 @@
 }
 
 /* General Styles */
-body, p, li, span, a, nav {
+body {
     font-family: 'BeneluxMedium', sans-serif;
     background-color: var(--background-color);
-    color: var(--primary-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
+}
+
+/* Main content area */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 /* Header styling */
@@ -47,31 +55,62 @@ header {
 
 header img {
     max-height: 50px;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
+/* Navigation styling */
 nav {
     background-color: var(--primary-color);
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     text-align: center;
+    width: 100%;
 }
 
 nav a {
-    color: var(--background-color); /* Beige font color */
+    color: #ffffff;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     font-size: 1.2rem;
+    background-color: transparent;
 }
 
 nav a:hover {
-    color: var(--highlight-color); /* Yellow highlight on hover */
+    color: var(--highlight-color);
     text-decoration: underline;
+    background-color: transparent;
 }
 
+/* Typography */
 h1 {
     font-family: 'UngapBlocks', sans-serif;
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 h2, h3, h4, h5, h6 {
     font-family: 'BeneluxMedium', sans-serif;
+}
+
+p, li, span {
+    font-family: 'BeneluxMedium', sans-serif;
+    line-height: 1.6;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
 }

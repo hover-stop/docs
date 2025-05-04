@@ -11,11 +11,13 @@
     <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="HoverStop Logo">
   </header>
   <nav>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/content/technical-data/' | relative_url }}">Technical Data</a>
-    <a href="{{ '/content/build-guides/' | relative_url }}">Build Guides</a>
-    <a href="{{ '/content/manuals/' | relative_url }}">Manuals</a>
-    <a href="{{ '/content/brand-guidelines/' | relative_url }}">Brand Guidelines</a>
+    <div class="nav-container">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/content/technical-data/' | relative_url }}">Technical Data</a>
+      <a href="{{ '/content/build-guides/' | relative_url }}">Build Guides</a>
+      <a href="{{ '/content/manuals/' | relative_url }}">Manuals</a>
+      <a href="{{ '/content/brand-guidelines/' | relative_url }}">Brand Guidelines</a>
+    </div>
   </nav>
   <main>
     {{ content }}
