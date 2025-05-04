@@ -28,15 +28,18 @@ jobs:
       run: |
         mkdocs build --verbose
 
-    - name: Copy assets directory
+    - name: Ensure assets directory in docs
       run: |
-        # Make sure the assets directory exists in the site output
-        mkdir -p site/assets
-        cp -r assets/* site/assets/
+        mkdir -p site/assets/css
+        mkdir -p site/assets/fonts
+        mkdir -p site/assets/img
+        cp -r assets/css/* site/assets/css/
+        cp -r assets/fonts/* site/assets/fonts/
+        cp -r assets/img/* site/assets/img/
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./site
-        keep_files: true
+        force_orphan: true

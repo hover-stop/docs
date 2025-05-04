@@ -31,3 +31,8 @@ use_directory_urls: true
 # Ensure assets are correctly copied to the site directory
 docs_dir: .
 site_dir: site
+exclude_docs: |
+  _site/
+  content/brand guidelines/
+  content/build guides/
+  content/technical data/
