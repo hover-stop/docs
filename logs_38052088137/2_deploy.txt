@@ -1,0 +1,53 @@
+﻿2025-05-04T03:01:15.9295414Z Current runner version: '2.323.0'
+2025-05-04T03:01:15.9326062Z ##[group]Operating System
+2025-05-04T03:01:15.9327803Z Ubuntu
+2025-05-04T03:01:15.9328285Z 24.04.2
+2025-05-04T03:01:15.9328742Z LTS
+2025-05-04T03:01:15.9329262Z ##[endgroup]
+2025-05-04T03:01:15.9329778Z ##[group]Runner Image
+2025-05-04T03:01:15.9330367Z Image: ubuntu-24.04
+2025-05-04T03:01:15.9330952Z Version: 20250427.1.0
+2025-05-04T03:01:15.9331945Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250427.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-05-04T03:01:15.9333310Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250427.1
+2025-05-04T03:01:15.9334235Z ##[endgroup]
+2025-05-04T03:01:15.9334704Z ##[group]Runner Image Provisioner
+2025-05-04T03:01:15.9335313Z 2.0.422.1
+2025-05-04T03:01:15.9335783Z ##[endgroup]
+2025-05-04T03:01:15.9337060Z ##[group]GITHUB_TOKEN Permissions
+2025-05-04T03:01:15.9338878Z Contents: read
+2025-05-04T03:01:15.9339524Z Metadata: read
+2025-05-04T03:01:15.9340185Z Pages: write
+2025-05-04T03:01:15.9340794Z ##[endgroup]
+2025-05-04T03:01:15.9342873Z Secret source: Actions
+2025-05-04T03:01:15.9343518Z Prepare workflow directory
+2025-05-04T03:01:15.9674742Z Prepare all required actions
+2025-05-04T03:01:15.9711072Z Getting action download info
+2025-05-04T03:01:16.5140972Z ##[group]Download immutable action package 'actions/deploy-pages@v4'
+2025-05-04T03:01:16.5141962Z Version: 4.0.5
+2025-05-04T03:01:16.5142912Z Digest: sha256:6c3db754d8de3353b3b6ae87dfde94a016fd0980c05e9ccc6d9a16a9148b054e
+2025-05-04T03:01:16.5144194Z Source commit SHA: d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
+2025-05-04T03:01:16.5146033Z ##[endgroup]
+2025-05-04T03:01:16.9740566Z Complete job name: deploy
+2025-05-04T03:01:17.0451933Z ##[group]Run actions/deploy-pages@v4
+2025-05-04T03:01:17.0452777Z with:
+2025-05-04T03:01:17.0453311Z   token: ***
+2025-05-04T03:01:17.0453676Z   timeout: 600000
+2025-05-04T03:01:17.0454081Z   error_count: 10
+2025-05-04T03:01:17.0454516Z   reporting_interval: 5000
+2025-05-04T03:01:17.0455037Z   artifact_name: github-pages
+2025-05-04T03:01:17.0455514Z   preview: false
+2025-05-04T03:01:17.0456125Z ##[endgroup]
+2025-05-04T03:01:17.6321464Z Fetching artifact metadata for "github-pages" in this workflow run
+2025-05-04T03:01:17.9094842Z Found 1 artifact(s)
+2025-05-04T03:01:17.9160552Z Creating Pages deployment with payload:
+2025-05-04T03:01:17.9162044Z {
+2025-05-04T03:01:17.9163119Z 	"artifact_id": 3056739053,
+2025-05-04T03:01:17.9164807Z 	"pages_build_version": "a7089c4852688abe3b4faa4e53adb5c0d46b227c",
+2025-05-04T03:01:17.9345317Z 	"oidc_token": "***"
+2025-05-04T03:01:17.9346225Z }
+2025-05-04T03:01:18.2499274Z Created deployment for a7089c4852688abe3b4faa4e53adb5c0d46b227c, ID: a7089c4852688abe3b4faa4e53adb5c0d46b227c
+2025-05-04T03:01:23.2524791Z Getting Pages deployment status...
+2025-05-04T03:01:23.4290911Z Reported success!
+2025-05-04T03:01:23.4530075Z Evaluate and set environment url
+2025-05-04T03:01:23.4534736Z Evaluated environment url: https://hover-stop.github.io/docs/
+2025-05-04T03:01:23.4535725Z Cleaning up orphan processes

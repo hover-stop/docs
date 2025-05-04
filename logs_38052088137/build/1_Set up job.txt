@@ -1,0 +1,42 @@
+﻿2025-05-04T03:00:50.0965797Z Current runner version: '2.323.0'
+2025-05-04T03:00:50.1006446Z ##[group]Operating System
+2025-05-04T03:00:50.1007512Z Ubuntu
+2025-05-04T03:00:50.1008486Z 24.04.2
+2025-05-04T03:00:50.1009207Z LTS
+2025-05-04T03:00:50.1009948Z ##[endgroup]
+2025-05-04T03:00:50.1010862Z ##[group]Runner Image
+2025-05-04T03:00:50.1012204Z Image: ubuntu-24.04
+2025-05-04T03:00:50.1013127Z Version: 20250427.1.0
+2025-05-04T03:00:50.1015084Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250427.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-05-04T03:00:50.1017683Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250427.1
+2025-05-04T03:00:50.1019192Z ##[endgroup]
+2025-05-04T03:00:50.1020146Z ##[group]Runner Image Provisioner
+2025-05-04T03:00:50.1021078Z 2.0.422.1
+2025-05-04T03:00:50.1021971Z ##[endgroup]
+2025-05-04T03:00:50.1023720Z ##[group]GITHUB_TOKEN Permissions
+2025-05-04T03:00:50.1026493Z Contents: read
+2025-05-04T03:00:50.1027248Z Metadata: read
+2025-05-04T03:00:50.1028124Z Pages: write
+2025-05-04T03:00:50.1029239Z ##[endgroup]
+2025-05-04T03:00:50.1032309Z Secret source: Actions
+2025-05-04T03:00:50.1033728Z Prepare workflow directory
+2025-05-04T03:00:50.1497532Z Prepare all required actions
+2025-05-04T03:00:50.1553880Z Getting action download info
+2025-05-04T03:00:50.5990574Z ##[group]Download immutable action package 'actions/checkout@v4'
+2025-05-04T03:00:50.5991999Z Version: 4.2.2
+2025-05-04T03:00:50.5993020Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-05-04T03:00:50.5994231Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-05-04T03:00:50.5995154Z ##[endgroup]
+2025-05-04T03:00:50.8756532Z Download action repository 'actions/jekyll-build-pages@v1' (SHA:44a6e6beabd48582f863aeeb6cb2151cc1716697)
+2025-05-04T03:00:51.0595128Z ##[group]Download immutable action package 'actions/upload-pages-artifact@v3'
+2025-05-04T03:00:51.0596066Z Version: 3.0.1
+2025-05-04T03:00:51.0596913Z Digest: sha256:aa65de5e734350e024ca30fe125144b6260e68160e01349fc79f7e321ec35490
+2025-05-04T03:00:51.0598014Z Source commit SHA: 56afc609e74202658d3ffba0e8f6dda462b719fa
+2025-05-04T03:00:51.0598701Z ##[endgroup]
+2025-05-04T03:00:51.2606181Z Getting action download info
+2025-05-04T03:00:51.3546806Z ##[group]Download immutable action package 'actions/upload-artifact@v4'
+2025-05-04T03:00:51.3547677Z Version: 4.6.2
+2025-05-04T03:00:51.3548395Z Digest: sha256:290722aa3281d5caf23d0acdc3dbeb3424786a1a01a9cc97e72f147225e37c38
+2025-05-04T03:00:51.3549378Z Source commit SHA: ea165f8d65b6e75b540449e92b4886f43607fa02
+2025-05-04T03:00:51.3550053Z ##[endgroup]
+2025-05-04T03:00:51.5402644Z Complete job name: build

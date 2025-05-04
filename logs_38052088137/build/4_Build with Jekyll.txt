@@ -1,0 +1,80 @@
+﻿2025-05-04T03:01:05.2070489Z ##[group]Run actions/jekyll-build-pages@v1
+2025-05-04T03:01:05.2070791Z with:
+2025-05-04T03:01:05.2070962Z   source: .
+2025-05-04T03:01:05.2071126Z   destination: ./_site
+2025-05-04T03:01:05.2071723Z   future: false
+2025-05-04T03:01:05.2071994Z   build_revision: a7089c4852688abe3b4faa4e53adb5c0d46b227c
+2025-05-04T03:01:05.2072274Z   verbose: true
+2025-05-04T03:01:05.2072593Z   token: ***
+2025-05-04T03:01:05.2072764Z ##[endgroup]
+2025-05-04T03:01:05.2164708Z ##[command]/usr/bin/docker run --name ghcrioactionsjekyllbuildpagesv1013_424741 --label 8ac262 --workdir /github/workspace --rm -e "INPUT_SOURCE" -e "INPUT_DESTINATION" -e "INPUT_FUTURE" -e "INPUT_BUILD_REVISION" -e "INPUT_VERBOSE" -e "INPUT_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_ID_TOKEN_REQUEST_URL" -e "ACTIONS_ID_TOKEN_REQUEST_TOKEN" -e "ACTIONS_RESULTS_URL" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/docs/docs":"/github/workspace" ghcr.io/actions/jekyll-build-pages:v1.0.13
+2025-05-04T03:01:06.4603306Z [33mConfiguration file: none[0m
+2025-05-04T03:01:06.5843742Z To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+2025-05-04T03:01:08.3020060Z   Logging at level: debug
+2025-05-04T03:01:08.3020771Z       GitHub Pages: github-pages v232
+2025-05-04T03:01:08.3021446Z       GitHub Pages: jekyll v3.10.0
+2025-05-04T03:01:08.3021855Z              Theme: jekyll-theme-primer
+2025-05-04T03:01:08.3022367Z       Theme source: /usr/local/bundle/gems/jekyll-theme-primer-0.6.0
+2025-05-04T03:01:08.3022929Z          Requiring: jekyll-github-metadata
+2025-05-04T03:01:08.3023331Z          Requiring: jekyll-seo-tag
+2025-05-04T03:01:08.3023719Z          Requiring: jekyll-coffeescript
+2025-05-04T03:01:08.3024169Z          Requiring: jekyll-commonmark-ghpages
+2025-05-04T03:01:08.3024562Z          Requiring: jekyll-gist
+2025-05-04T03:01:08.3025334Z          Requiring: jekyll-github-metadata
+2025-05-04T03:01:08.3025741Z          Requiring: jekyll-paginate
+2025-05-04T03:01:08.3026156Z          Requiring: jekyll-relative-links
+2025-05-04T03:01:08.3026600Z          Requiring: jekyll-optional-front-matter
+2025-05-04T03:01:08.3027053Z          Requiring: jekyll-readme-index
+2025-05-04T03:01:08.3027469Z          Requiring: jekyll-default-layout
+2025-05-04T03:01:08.3027905Z          Requiring: jekyll-titles-from-headings
+2025-05-04T03:01:08.3028348Z    GitHub Metadata: Initializing...
+2025-05-04T03:01:08.3028740Z             Source: /github/workspace/.
+2025-05-04T03:01:08.3029134Z        Destination: /github/workspace/./_site
+2025-05-04T03:01:08.3029641Z  Incremental build: disabled. Enable with --incremental
+2025-05-04T03:01:08.3030119Z       Generating... 
+2025-05-04T03:01:08.3035770Z         Generating: JekyllOptionalFrontMatter::Generator finished in 0.000344402 seconds.
+2025-05-04T03:01:08.3036466Z         Generating: JekyllReadmeIndex::Generator finished in 5.0434e-05 seconds.
+2025-05-04T03:01:08.3037333Z         Generating: Jekyll::Paginate::Pagination finished in 5.57e-06 seconds.
+2025-05-04T03:01:08.3037893Z         Generating: JekyllRelativeLinks::Generator finished in 0.000422829 seconds.
+2025-05-04T03:01:08.3038426Z         Generating: JekyllDefaultLayout::Generator finished in 0.001522168 seconds.
+2025-05-04T03:01:08.3038815Z          Requiring: kramdown-parser-gfm
+2025-05-04T03:01:08.3039291Z         Generating: JekyllTitlesFromHeadings::Generator finished in 0.008560823 seconds.
+2025-05-04T03:01:08.3039683Z          Rendering: assets/css/style.scss
+2025-05-04T03:01:08.3039971Z   Pre-Render Hooks: assets/css/style.scss
+2025-05-04T03:01:08.3040278Z   Rendering Markup: assets/css/style.scss
+2025-05-04T03:01:08.3040543Z          Rendering: content/brand-guidelines/index.md
+2025-05-04T03:01:08.3040938Z   Pre-Render Hooks: content/brand-guidelines/index.md
+2025-05-04T03:01:08.3041772Z   Rendering Markup: content/brand-guidelines/index.md
+2025-05-04T03:01:08.3042166Z   Rendering Layout: content/brand-guidelines/index.md
+2025-05-04T03:01:08.3042535Z      Layout source: theme
+2025-05-04T03:01:08.3042869Z    GitHub Metadata: Generating for hover-stop/docs
+2025-05-04T03:01:08.3043744Z    GitHub Metadata: Calling @client.repository("hover-stop/docs", {:accept=>"application/vnd.github.drax-preview+json"})
+2025-05-04T03:01:08.3044660Z    GitHub Metadata: Calling @client.pages("hover-stop/docs", {})
+2025-05-04T03:01:08.3045196Z          Rendering: content/build-guides/index.md
+2025-05-04T03:01:08.3045667Z   Pre-Render Hooks: content/build-guides/index.md
+2025-05-04T03:01:08.3046151Z   Rendering Markup: content/build-guides/index.md
+2025-05-04T03:01:08.3046617Z   Rendering Layout: content/build-guides/index.md
+2025-05-04T03:01:08.3047030Z      Layout source: theme
+2025-05-04T03:01:08.3047382Z          Rendering: content/manuals/index.md
+2025-05-04T03:01:08.3047808Z   Pre-Render Hooks: content/manuals/index.md
+2025-05-04T03:01:08.3048253Z   Rendering Markup: content/manuals/index.md
+2025-05-04T03:01:08.3048718Z   Rendering Layout: content/manuals/index.md
+2025-05-04T03:01:08.3049144Z      Layout source: theme
+2025-05-04T03:01:08.3049520Z          Rendering: content/technical-data/index.md
+2025-05-04T03:01:08.3050015Z   Pre-Render Hooks: content/technical-data/index.md
+2025-05-04T03:01:08.3050473Z   Rendering Markup: content/technical-data/index.md
+2025-05-04T03:01:08.3050964Z   Rendering Layout: content/technical-data/index.md
+2025-05-04T03:01:08.3051569Z      Layout source: theme
+2025-05-04T03:01:08.3051893Z          Rendering: index.md
+2025-05-04T03:01:08.3052251Z   Pre-Render Hooks: index.md
+2025-05-04T03:01:08.3052505Z   Rendering Markup: index.md
+2025-05-04T03:01:08.3052779Z   Rendering Layout: index.md
+2025-05-04T03:01:08.3053084Z      Layout source: theme
+2025-05-04T03:01:08.3053344Z            Writing: /github/workspace/_site/assets/css/style.css
+2025-05-04T03:01:08.3053956Z            Writing: /github/workspace/_site/content/brand-guidelines/index.html
+2025-05-04T03:01:08.3055085Z            Writing: /github/workspace/_site/content/build-guides/index.html
+2025-05-04T03:01:08.3055764Z            Writing: /github/workspace/_site/content/manuals/index.html
+2025-05-04T03:01:08.3056166Z            Writing: /github/workspace/_site/content/technical-data/index.html
+2025-05-04T03:01:08.3056590Z            Writing: /github/workspace/_site/index.html
+2025-05-04T03:01:08.3056847Z                     done in 1.413 seconds.
+2025-05-04T03:01:08.3057125Z  Auto-regeneration: disabled. Use --watch to enable.

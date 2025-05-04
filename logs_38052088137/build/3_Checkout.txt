@@ -1,0 +1,87 @@
+﻿2025-05-04T03:01:02.8060169Z ##[group]Run actions/checkout@v4
+2025-05-04T03:01:02.8060740Z with:
+2025-05-04T03:01:02.8060932Z   ref: gh-pages
+2025-05-04T03:01:02.8061128Z   submodules: recursive
+2025-05-04T03:01:02.8061563Z   repository: hover-stop/docs
+2025-05-04T03:01:02.8061937Z   token: ***
+2025-05-04T03:01:02.8062119Z   ssh-strict: true
+2025-05-04T03:01:02.8062308Z   ssh-user: git
+2025-05-04T03:01:02.8062490Z   persist-credentials: true
+2025-05-04T03:01:02.8062703Z   clean: true
+2025-05-04T03:01:02.8062887Z   sparse-checkout-cone-mode: true
+2025-05-04T03:01:02.8063118Z   fetch-depth: 1
+2025-05-04T03:01:02.8063292Z   fetch-tags: false
+2025-05-04T03:01:02.8063496Z   show-progress: true
+2025-05-04T03:01:02.8063709Z   lfs: false
+2025-05-04T03:01:02.8063893Z   set-safe-directory: true
+2025-05-04T03:01:02.8064391Z ##[endgroup]
+2025-05-04T03:01:04.2916204Z Syncing repository: hover-stop/docs
+2025-05-04T03:01:04.2917693Z ##[group]Getting Git version info
+2025-05-04T03:01:04.2918169Z Working directory is '/home/runner/work/docs/docs'
+2025-05-04T03:01:04.2918721Z [command]/usr/bin/git version
+2025-05-04T03:01:04.3841134Z git version 2.49.0
+2025-05-04T03:01:04.3902067Z ##[endgroup]
+2025-05-04T03:01:04.3918052Z Temporarily overriding HOME='/home/runner/work/_temp/4bb517a4-5e13-4b67-ad27-f6e3232d789b' before making global git config changes
+2025-05-04T03:01:04.3919349Z Adding repository directory to the temporary git global config as a safe directory
+2025-05-04T03:01:04.3932344Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/docs/docs
+2025-05-04T03:01:04.4003702Z Deleting the contents of '/home/runner/work/docs/docs'
+2025-05-04T03:01:04.4007509Z ##[group]Initializing the repository
+2025-05-04T03:01:04.4012415Z [command]/usr/bin/git init /home/runner/work/docs/docs
+2025-05-04T03:01:04.4256990Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-05-04T03:01:04.4258021Z hint: is subject to change. To configure the initial branch name to use in all
+2025-05-04T03:01:04.4258693Z hint: of your new repositories, which will suppress this warning, call:
+2025-05-04T03:01:04.4259126Z hint:
+2025-05-04T03:01:04.4259412Z hint: 	git config --global init.defaultBranch <name>
+2025-05-04T03:01:04.4260001Z hint:
+2025-05-04T03:01:04.4260308Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-05-04T03:01:04.4260843Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-05-04T03:01:04.4261505Z hint:
+2025-05-04T03:01:04.4261726Z hint: 	git branch -m <name>
+2025-05-04T03:01:04.4331792Z Initialized empty Git repository in /home/runner/work/docs/docs/.git/
+2025-05-04T03:01:04.4346170Z [command]/usr/bin/git remote add origin https://github.com/hover-stop/docs
+2025-05-04T03:01:04.4417919Z ##[endgroup]
+2025-05-04T03:01:04.4418538Z ##[group]Disabling automatic garbage collection
+2025-05-04T03:01:04.4423495Z [command]/usr/bin/git config --local gc.auto 0
+2025-05-04T03:01:04.4452525Z ##[endgroup]
+2025-05-04T03:01:04.4453089Z ##[group]Setting up auth
+2025-05-04T03:01:04.4460676Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-05-04T03:01:04.4491895Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-05-04T03:01:04.5712667Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-05-04T03:01:04.5750008Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-05-04T03:01:04.5991450Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-05-04T03:01:04.6039851Z ##[endgroup]
+2025-05-04T03:01:04.6040523Z ##[group]Fetching the repository
+2025-05-04T03:01:04.6049895Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/gh-pages*:refs/remotes/origin/gh-pages* +refs/tags/gh-pages*:refs/tags/gh-pages*
+2025-05-04T03:01:04.9618449Z From https://github.com/hover-stop/docs
+2025-05-04T03:01:04.9684161Z  * [new branch]      gh-pages   -> origin/gh-pages
+2025-05-04T03:01:04.9685532Z ##[endgroup]
+2025-05-04T03:01:04.9685951Z ##[group]Determining the checkout info
+2025-05-04T03:01:04.9693375Z [command]/usr/bin/git branch --list --remote origin/gh-pages
+2025-05-04T03:01:04.9716606Z   origin/gh-pages
+2025-05-04T03:01:04.9722308Z ##[endgroup]
+2025-05-04T03:01:04.9726838Z [command]/usr/bin/git sparse-checkout disable
+2025-05-04T03:01:04.9801788Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-05-04T03:01:04.9830140Z ##[group]Checking out the ref
+2025-05-04T03:01:04.9834956Z [command]/usr/bin/git checkout --progress --force -B gh-pages refs/remotes/origin/gh-pages
+2025-05-04T03:01:04.9939932Z Switched to a new branch 'gh-pages'
+2025-05-04T03:01:04.9943449Z branch 'gh-pages' set up to track 'origin/gh-pages'.
+2025-05-04T03:01:04.9949606Z ##[endgroup]
+2025-05-04T03:01:04.9950234Z ##[group]Setting up auth for fetching submodules
+2025-05-04T03:01:04.9956013Z [command]/usr/bin/git config --global http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-05-04T03:01:04.9992552Z [command]/usr/bin/git config --global --unset-all url.https://github.com/.insteadOf
+2025-05-04T03:01:05.0023692Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf git@github.com:
+2025-05-04T03:01:05.0054712Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf org-210193768@github.com:
+2025-05-04T03:01:05.0084269Z ##[endgroup]
+2025-05-04T03:01:05.0084781Z ##[group]Fetching submodules
+2025-05-04T03:01:05.0088354Z [command]/usr/bin/git submodule sync --recursive
+2025-05-04T03:01:05.0345918Z [command]/usr/bin/git -c protocol.version=2 submodule update --init --force --depth=1 --recursive
+2025-05-04T03:01:05.0577351Z [command]/usr/bin/git submodule foreach --recursive git config --local gc.auto 0
+2025-05-04T03:01:05.0804285Z ##[endgroup]
+2025-05-04T03:01:05.0804790Z ##[group]Persisting credentials for submodules
+2025-05-04T03:01:05.0810888Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'url\.https\:\/\/github\.com\/\.insteadOf' && git config --local --unset-all 'url.https://github.com/.insteadOf' || :"
+2025-05-04T03:01:05.1045853Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2025-05-04T03:01:05.1272575Z [command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'git@github.com:'
+2025-05-04T03:01:05.1498408Z [command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'org-210193768@github.com:'
+2025-05-04T03:01:05.1723932Z ##[endgroup]
+2025-05-04T03:01:05.1760529Z [command]/usr/bin/git log -1 --format=%H
+2025-05-04T03:01:05.1784909Z a7089c4852688abe3b4faa4e53adb5c0d46b227c
