@@ -18,6 +18,42 @@ Don't worry if the engineering part of the project isn't your thing, your input 
 
 -- Add a link here for donations.
 
+<details>
+<summary><strong>Legal & Licensing Information</strong></summary>
+
+## Legal & Licensing
+
+HoverStop designs and documentation are released under the following terms:
+
+### Open Source License
+- All HoverStop designs, documentation, and associated files are available as open source under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+### Attribution Requirements
+- You must attribute HoverStop in any use of our designs or documentation.
+- Attribution should include a clear reference to "HoverStop" and a link to our website or GitHub repository.
+- When sharing photos or videos of built HoverStop designs, please include attribution to HoverStop in your description or annotations.
+
+### Commercial Restrictions
+- You may not sell, lease, or otherwise commercialize HoverStop designs or documentation without explicit written permission.
+- Only HoverStop may sell kits or license fully or partially assembled products based on these designs.
+- For commercial licensing inquiries, please contact us directly.
+
+### Modification Restrictions
+- You may not modify or relabel HoverStop designs for redistribution.
+- Personal modifications for your own use are permitted but must not be distributed as HoverStop products.
+- Any distributed work based on modifications must clearly state it is an unofficial derivative and is not endorsed by HoverStop.
+
+### HoverStop Rights
+- HoverStop reserves the right to sell kits or license fully or partially assembled products based on these designs.
+- HoverStop may grant commercial licenses at its discretion.
+
+### Disclaimer
+- All designs are provided "as is" without warranty of any kind, express or implied.
+- HoverStop is not liable for any damages arising from the use of these designs.
+
+For questions about licensing or commercial use, please contact us at [contact email].
+</details>
+
 ## General Guidelines
 
 ### Style
