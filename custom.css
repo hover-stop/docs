@@ -35,14 +35,14 @@ body, p, li, span, a, nav {
     padding: 0;
 }
 
-/* Updated Header and Navigation Bar Styling */
+/* Header styling */
 header {
     background-color: #ffffff;
     border-bottom: 4px solid var(--primary-color);
-    padding: 1rem;
+    padding: 1rem 0;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 header img {

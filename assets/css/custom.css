@@ -37,7 +37,7 @@ body, p, li, span, a, nav {
 
 /* Header styling */
 header {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     border-bottom: 4px solid var(--primary-color);
     padding: 1rem 0;
     display: flex;
@@ -57,13 +57,14 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: var(--background-color); /* Beige font color */
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1.2rem;
 }
 
 nav a:hover {
+    color: var(--highlight-color); /* Yellow highlight on hover */
     text-decoration: underline;
 }
 
