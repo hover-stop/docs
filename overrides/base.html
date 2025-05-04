@@ -1,15 +1,16 @@
 {% extends "base.html" %}
 
 {% block header %}
+<link rel="stylesheet" href="/assets/css/custom.css">
 <header>
     <img src="/assets/img/logo.png" alt="Hover Stop Logo">
 </header>
 <nav>
-    <a href="./">Home</a>
-    <a href="technical-data/">Technical Data</a>
-    <a href="build-guides/">Build Guides</a>
-    <a href="manuals/">Manuals</a>
-    <a href="brand-guidelines/">Brand Guidelines</a>
+    <a href="/content/site/">Home</a>
+    <a href="/content/site/technical-data/">Technical Data</a>
+    <a href="/content/site/build-guides/">Build Guides</a>
+    <a href="/content/site/manuals/">Manuals</a>
+    <a href="/content/site/brand-guidelines/">Brand Guidelines</a>
 </nav>
 {% endblock %}
 
@@ -18,5 +19,3 @@
     {{ content }}
 </div>
 {% endblock %}
-
-<link rel="stylesheet" href="/assets/css/custom.css">
