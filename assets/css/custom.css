@@ -265,6 +265,24 @@ th {
     margin-top: 0; /* Remove extra top margin from first heading */
 }
 
+/* Style the links in the content area */
+.page-content ul li a {
+    color: var(--green-marine); /* Use a different color for content links */
+    text-decoration: underline; /* Make them look more like content links */
+    font-weight: normal; /* Normal weight to differentiate from nav */
+}
+
+/* Make list items in content area more distinct from navigation */
+.page-content ul {
+    padding-left: 1.5rem; /* Indent the list properly */
+    margin-bottom: 1.5rem; /* Add space below lists */
+}
+
+.page-content ul li {
+    margin-bottom: 0.5rem; /* Add space between list items */
+    list-style-type: disc; /* Use bullet points for lists */
+}
+
 /* Hide duplicate navigation links that appear in content */
 .page-content ul li a[href$="/basic-throttle/"],
 .page-content ul li a[href$="/advanced-throttle/"] {

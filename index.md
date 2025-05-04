@@ -14,7 +14,9 @@ Please come and join us and be part of the conversation!
 If you want to support us, we would welcome your input!
 All we ask is that you read some of the general guidance below to help us keep our quality bar high and the content accessable to all users!
 
-Don't worry if the engineering part of the project isn't your thing, your input is still welcome and if you want to help cover some of the overheads of the group, consider buying us a coffe or two using this link:
+Don't worry if the engineering part of the project isn't your thing, your input is still welcome and if you want to help cover some of the overheads of the group, consider buying us a coffe or two using the "Help us out" link below.
+
+
 <details markdown="1">
 <summary><strong>Legal & Licensing Information</strong></summary>
 
@@ -58,7 +60,7 @@ For questions about licensing or commercial use, please contact us at [contact e
 </details>
 
 <details markdown="1">
-<summary><strong>Legal & Licensing Information</strong></summary>
+<summary><strong>General Documenation Guidelines</strong></summary>
 
 ## General Guidelines
 
