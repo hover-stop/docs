@@ -31,7 +31,7 @@
         <h3>{{ section_path | replace: '-', ' ' | capitalize }}</h3>
         <ul class="section-nav">
           {% for sp in section_pages %}
-            {% if sp.title and sp.title != "" %}
+            {% if sp.title and sp.title != "" and sp.url != page.url and sp.parent != '' %}
               <li {% if page.url == sp.url %}class="active"{% endif %}>
                 <a href="{{ sp.url | relative_url }}">{{ sp.title }}</a>
                 

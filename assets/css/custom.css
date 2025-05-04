@@ -70,13 +70,14 @@ main.with-sidebar {
     width: 280px;
     background-color: var(--blue-pale);
     padding: 2rem 1rem;
-    position: fixed;
-    height: calc(100vh - 150px);
+    position: absolute; /* Changed from fixed to absolute so it scrolls with content */
+    height: auto; /* Allow the sidebar to expand with content */
+    min-height: calc(100vh - 150px);
     overflow-y: auto;
     border-right: 1px solid var(--gray-cool);
-    left: calc((100% - 1200px) / 2); /* Center-align with the content wrapper */
-    top: 150px; /* Position below header and nav */
-    z-index: 10; /* Ensure sidebar is above other content */
+    left: 0; /* Position at the left edge of content-wrapper */
+    top: 0; /* Position at the top of content-wrapper */
+    z-index: 10;
 }
 
 .sidebar h3 {

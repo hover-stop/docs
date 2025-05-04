@@ -3,7 +3,7 @@ layout: default
 title: Welcome to HoverStop Documentation
 ---
 
-# Welcome to HoverStop Documentation
+# Welcome
 
 HoverStop is a community-run organization that is developing highly customized flight simulator peripherals to life!
 This website is our documentation hub which is built from all our open source documentation in our github repo at github.com/hover-stop/docs.
