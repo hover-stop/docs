@@ -32,3 +32,9 @@ parent: Build Guides Overview
 This guide will walk you through building...
 
 ## Overview
+
+## Video Tutorial
+
+Watch our detailed assembly video tutorial:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="HSI Mk1 Grip Assembly Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
