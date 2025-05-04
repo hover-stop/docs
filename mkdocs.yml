@@ -21,6 +21,7 @@ theme:
   palette:
     primary: "blue"
     accent: "orange"
+  custom_dir: overrides
 extra_css:
   - css/custom.css
 extra_javascript:
