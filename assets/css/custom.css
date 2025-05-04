@@ -54,7 +54,7 @@ header {
 }
 
 header img {
-    max-height: 50px;
+    max-height: 150px; /* Increased from 50px to 150px (3x) */
     margin-left: 2rem;
 }
 
@@ -86,6 +86,9 @@ h1 {
     font-size: 3em;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
+    font-weight: normal; /* Added to prevent bold rendering */
+    -webkit-text-stroke: 0; /* Remove any edge stroke if present */
+    text-shadow: none; /* Remove any text shadow */
 }
 
 h2, h3, h4, h5, h6 {
