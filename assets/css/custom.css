@@ -163,3 +163,71 @@ th {
     background-color: var(--primary-color);
     color: white;
 }
+
+/* Latest Updates Section */
+.latest-updates {
+    background-color: var(--blue-pale);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.update-item {
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid var(--gray-cool);
+}
+
+.update-item:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.update-date {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.update-title {
+    font-weight: bold;
+    color: var(--green-teal);
+    font-size: 1.1em;
+}
+
+/* Welcome page specific styling */
+.welcome-section {
+    margin-bottom: 2.5rem;
+}
+
+.welcome-section h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--highlight-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+.welcome-section ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.welcome-section ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.welcome-section ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
