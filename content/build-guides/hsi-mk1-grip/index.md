@@ -17,7 +17,6 @@ parent: Build Guides Overview
 | **Reviewed By** |  |
 | **Approved By** |  |
 | **Next Review Date** | 03/11/25 |
-| **Confidentiality** | ☒ Public ☐ Internal Use ☐ Confidential ☐ Restricted |
 | **Location** | GitHub - hover-stop/docs |
 
 | Version | Date | Description of Change | Changed By |
@@ -32,6 +31,9 @@ parent: Build Guides Overview
 This guide will walk you through building...
 
 ## Overview
+
+![HSI Mk1 Grip Assembly](figure1.png)
+*Figure 1: HSI Mk1 Grip Assembly - Detailed view of the completed grip module with all buttons and switches installed.*
 
 ## Video Tutorial
 
