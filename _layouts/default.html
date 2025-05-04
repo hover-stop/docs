@@ -19,8 +19,43 @@
       <a href="{{ '/content/brand-guidelines/' | relative_url }}">Brand Guidelines</a>
     </div>
   </nav>
-  <main>
-    {{ content }}
-  </main>
+  
+  <div class="content-wrapper">
+    {% assign current_section = page.url | split: '/' | slice: 2 %}
+    {% if current_section != "" %}
+      {% assign section_path = current_section | first %}
+      {% assign section_pages = site.pages | where_exp: "item", "item.url contains section_path" | sort: "nav_order" %}
+      
+      {% if section_pages.size > 1 %}
+      <aside class="sidebar">
+        <h3>{{ section_path | replace: '-', ' ' | capitalize }}</h3>
+        <ul class="section-nav">
+          {% for sp in section_pages %}
+            {% if sp.title and sp.title != "" %}
+              <li {% if page.url == sp.url %}class="active"{% endif %}>
+                <a href="{{ sp.url | relative_url }}">{{ sp.title }}</a>
+                
+                {% if sp.url == page.url and page.has_children == true %}
+                  <ul class="subsection-nav">
+                  {% assign children_pages = site.pages | where: "parent", sp.title | sort: "nav_order" %}
+                  {% for child in children_pages %}
+                    <li {% if page.url == child.url %}class="active"{% endif %}>
+                      <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
+                    </li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </aside>
+      {% endif %}
+    {% endif %}
+    
+    <main {% if section_pages.size > 1 %}class="with-sidebar"{% endif %}>
+      {{ content }}
+    </main>
+  </div>
 </body>
 </html>
