@@ -1,0 +1,18 @@
+title: HoverStop Documentation
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hover-stop.github.io" # the base hostname & protocol for your site
+
+# Theme settings
+theme: jekyll-theme-cayman
+
+# Exclude files and folders from Jekyll processing
+exclude:
+  - "assets/"
+  - "docs/"
+  - "site/"
+  - ".nojekyll"
+
+# Customization
+markdown: kramdown
+kramdown:
+  input: GFM

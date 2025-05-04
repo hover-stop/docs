@@ -24,7 +24,7 @@ body {
 
 /* Header and Logo */
 nav.navbar {
-  background-color: var(--primary-color);
+  background-color: #D62828; /* Updated to match the specified color */
 }
 
 nav.navbar a {
@@ -44,4 +44,14 @@ a {
 
 a:hover {
   color: var(--secondary-color);
+}
+
+/* Override the bg-primary class to update the top banner background color */
+.bg-primary {
+  background-color: #D62828 !important;
+}
+
+/* Update all headers to use the primary blue color */
+h1, h2, h3, h4, h5, h6 {
+  color: #003049;
 }
