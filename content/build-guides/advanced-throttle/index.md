@@ -12,18 +12,16 @@ parent: Build Guides Overview
 | :---- | ----- |
 | **Document Number** | 0004 |
 | **Version Number** | 1.0 |
-| **Effective Date** | 03/05/25 |
+| **Effective Date** | 3 May 25 |
 | **Prepared By** | HoverStop Documentation Team |
 | **Reviewed By** |  |
 | **Approved By** |  |
-| **Next Review Date** | 03/11/25 |
-| **Confidentiality** | ☒ Public ☐ Internal Use ☐ Confidential ☐ Restricted |
+| **Next Review Date** | 3 Jun 25 |
 | **Location** | GitHub - hover-stop/docs |
 
 | Version | Date | Description of Change | Changed By |
 | ----- | ----- | ----- | ----- |
-| 1.0 | 03/05/25 | Initial release | HoverStop Docs Team |
-|  |  |  |  |
+| 1.0 | 3 May 25 | Initial release | HoverStop Docs Team |
 
 </details>
 
