@@ -1,16 +1,20 @@
 {% extends "base.html" %}
 
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ base_url }}/assets/css/custom.css">
+{% endblock %}
+
 {% block header %}
-<link rel="stylesheet" href="{{ config.site_url }}/assets/css/custom.css">
 <header>
-    <img src="{{ config.site_url }}/assets/img/logo.png" alt="HoverStop Logo">
+    <img src="{{ base_url }}/assets/img/logo.png" alt="HoverStop Logo">
 </header>
 <nav>
-    <a href="{{ config.site_url }}/">Home</a>
-    <a href="{{ config.site_url }}/content/technical-data/">Technical Data</a>
-    <a href="{{ config.site_url }}/content/build-guides/">Build Guides</a>
-    <a href="{{ config.site_url }}/content/manuals/">Manuals</a>
-    <a href="{{ config.site_url }}/content/brand-guidelines/">Brand Guidelines</a>
+    <a href="{{ base_url }}/">Home</a>
+    <a href="{{ base_url }}/content/technical-data/">Technical Data</a>
+    <a href="{{ base_url }}/content/build-guides/">Build Guides</a>
+    <a href="{{ base_url }}/content/manuals/">Manuals</a>
+    <a href="{{ base_url }}/content/brand-guidelines/">Brand Guidelines</a>
 </nav>
 {% endblock %}
 

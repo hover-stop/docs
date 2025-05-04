@@ -27,3 +27,7 @@ extra_css:
 extra_javascript:
   - assets/js/custom.js
 use_directory_urls: true
+
+# Ensure assets are correctly copied to the site directory
+docs_dir: .
+site_dir: site
