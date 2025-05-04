@@ -18,20 +18,48 @@ Don't worry if the engineering part of the project isn't your thing, your input 
 
 -- Add a link here for donations.
 
-# General Guidelines
+## General Guidelines
 
-## Style
+### Style
 
 Please make sure that the documents are written in the style that is appropriate for the content, i.e. a build guide should be clear, precise, and have a logical flow.
 Try not to use acronyms and be consistent with the terms you use to refer to things (i.e. if you're talking about a mounting plate, refer to it as that and not a plate or panel or other somesuch)!
 
-## Conventions
+### Conventions
 
-### Language
+#### Language
 We are a dispersed team that spans continents and languages.
 Use technical English (US or EN) to write.
 
-### Date and Time
+#### Date and Time
 Please use either YYYYMMDD (i.e. 20250405) or D MMM YY (5 Apr 2025) for dates.
-For times use 24h format and include the timezone (i.e. 1930UTC-7 or 1930PT).
+For times use 24h format and include the timezone (i.e. 1930(UTC-7) or 1930PT).
+
+## Technical Documentation
+
+- **Measurements**: Always use metric units (millimeters) as the primary measurement, with imperial equivalents in parentheses if needed.
+- **Components**: When referencing specific components, use the exact part number and name as listed in the technical data.
+- **CAD Files**: Include links to the latest version of relevant CAD files when discussing design elements.
+- **Tolerances**: Always specify manufacturing tolerances for critical dimensions.
+
+## Build Guides
+
+- **Prerequisites**: Start each guide with a clear list of required tools, skills, and components.
+- **Safety First**: Include appropriate safety warnings for any procedures involving power tools, electronics, or potentially hazardous materials.
+- **Photos**: Include high-quality images at key steps, with annotations pointing to important details.
+- **Testing**: End each section with verification steps so builders can confirm successful completion before moving on.
+
+## Supporting Users
+
+- **Accessibility**: Write content that's accessible to users with different experience levels.
+- **Troubleshooting**: Include common issues and their solutions at the end of each technical section.
+- **Internationalization**: Avoid region-specific jargon or references that may not translate well globally.
+- **Version Compatibility**: Clearly mark which hardware or firmware versions a particular instruction applies to.
+
+## Community Contributions
+
+- **Attribution**: Always credit community members when incorporating their designs, improvements, or documentation.
+- **Feedback Loop**: When documenting a new feature or design, include the reasoning and community discussion that led to its development.
+- **Iterative Improvement**: Mark documentation with version numbers and maintain a changelog to track significant updates.
+- **Peer Review**: Submit significant documentation changes for community review before finalizing.
 
