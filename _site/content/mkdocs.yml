@@ -1,0 +1,23 @@
+site_name: HoverStop Documentation
+site_url: https://hover-stop.github.io/docs/
+
+nav:
+  - Home: index.md
+  - Build Guides: build-guides.md
+  - Manuals: manuals.md
+  - Technical Data: technical-data.md
+  - Hardware Configuration: hardware-configuration.md
+  - Design Guides: design-guides.md
+  - Style Guides: style-guides.md
+
+extra:
+  logo: assets/images/Logo.png
+  favicon: assets/images/Logo.png
+
+extra_css:
+  - assets/css/custom.css
+
+include:
+  - assets/fonts/**
+  - assets/images/**
+  - assets/css/**
