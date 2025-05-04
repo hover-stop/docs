@@ -3,10 +3,10 @@ site_url: https://hover-stop.github.io/docs
 repo_url: https://github.com/hover-stop/docs
 nav:
   - Home: index.md
-  - Technical Data: content/technical data/index.md
-  - Build Guides: content/build guides/index.md
+  - Technical Data: content/technical-data/index.md
+  - Build Guides: content/build-guides/index.md
   - Manuals: content/manuals/index.md
-  - Brand Guidelines: content/brand guidelines/index.md
+  - Brand Guidelines: content/brand-guidelines/index.md
 markdown_extensions:
   - toc:
       permalink: true
