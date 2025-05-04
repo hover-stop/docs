@@ -5,6 +5,28 @@ nav_order: 3
 parent: Build Guides Overview
 ---
 
+<details markdown="1">
+<summary><strong>Document Information</strong></summary>
+
+| Document Title | HoverStop Advanced Throttle Quadrant Build Guide |
+| :---- | ----- |
+| **Document Number** | 0004 |
+| **Version Number** | 1.0 |
+| **Effective Date** | 03/05/25 |
+| **Prepared By** | HoverStop Documentation Team |
+| **Reviewed By** |  |
+| **Approved By** |  |
+| **Next Review Date** | 03/11/25 |
+| **Confidentiality** | ☒ Public ☐ Internal Use ☐ Confidential ☐ Restricted |
+| **Location** | GitHub - hover-stop/docs |
+
+| Version | Date | Description of Change | Changed By |
+| ----- | ----- | ----- | ----- |
+| 1.0 | 03/05/25 | Initial release | HoverStop Docs Team |
+|  |  |  |  |
+
+</details>
+
 # Advanced Throttle Quadrant
 
 This guide covers the construction of the HoverStop Advanced Throttle Quadrant, designed for multi-engine aircraft simulation.
