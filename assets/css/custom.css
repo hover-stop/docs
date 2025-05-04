@@ -2,12 +2,21 @@
 
 /* Color Palette */
 :root {
+    /* Primary Palette */
     --primary-color: #003049;
     --secondary-color: #D62828;
     --accent-color: #F77F00;
     --highlight-color: #FCBF49;
     --background-color: #ffffff;
     --text-color: #333333;
+    
+    /* Secondary Palette */
+    --blue-light: #8ECAE6;
+    --blue-pale: #CFE8EF;
+    --green-teal: #219EBC;
+    --sand-light: #F2E8CF;
+    --terracotta: #E76F51;
+    --gray-cool: #E0E0E0;
 }
 
 /* Font-face declarations */
@@ -90,7 +99,7 @@ h1 {
     -webkit-text-stroke: 0; /* Remove any edge stroke if present */
     text-shadow: none; /* Remove any text shadow */
     letter-spacing: 0.05em; /* Add slight spacing between letters */
-    color: var(--primary-color); /* Ensure high contrast */
+    color: var(--secondary-color); /* Ensure high contrast */
 }
 
 /* Alternative styling for UngapBlocks if needed */
@@ -108,6 +117,33 @@ h2, h3, h4, h5, h6 {
 p, li, span {
     font-family: 'BeneluxMedium', sans-serif;
     line-height: 1.6;
+}
+
+/* Code and pre formatting */
+code, pre {
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+
+code {
+    padding: 2px 5px;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+    line-height: 1.45;
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
 }
 
 /* Table styling */
