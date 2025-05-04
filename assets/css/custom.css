@@ -35,27 +35,35 @@ body, p, li, span, a, nav {
     padding: 0;
 }
 
+/* Header styling */
 header {
-    background-color: var(--primary-color) !important;
-    color: var(--background-color);
+    background-color: #ffffff;
+    border-bottom: 4px solid var(--primary-color);
     padding: 1rem 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header img {
     max-height: 50px;
-    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 0.5rem 0;
+    text-align: center;
 }
 
 nav a {
-    color: var(--secondary-color);
+    color: #ffffff;
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1.2rem;
 }
 
 nav a:hover {
-    color: var(--accent-color);
     text-decoration: underline;
 }
 
