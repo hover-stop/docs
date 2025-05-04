@@ -1,0 +1,64 @@
+/* Custom CSS for Hover Stop Documentation */
+
+/* Color Palette */
+:root {
+    --primary-color: #003049;
+    --secondary-color: #D62828;
+    --accent-color: #F77F00;
+    --highlight-color: #FCBF49;
+    --background-color: #EAE2B7;
+}
+
+/* Font-face declarations */
+@font-face {
+    font-family: 'UngapBlocks';
+    src: url('../fonts/UngapBlocks/font.woff2') format('woff2'),
+         url('../fonts/UngapBlocks/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BeneluxMedium';
+    src: url('../fonts/BeneluxMedium/font.woff2') format('woff2'),
+         url('../fonts/BeneluxMedium/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Styles */
+body {
+    font-family: 'BeneluxMedium', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header img {
+    max-height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'UngapBlocks', sans-serif;
+}
