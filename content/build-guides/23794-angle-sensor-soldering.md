@@ -47,7 +47,7 @@ This guide provides step-by-step instructions for soldering wires onto the turre
   - A **180° hook** makes later removal easier if needed.
 
 ## 4. Position the Hook onto the Turret Terminal
-- Place the hooked wire on the lower section of the turret so the wire lays flush against the board (if present).
+- Place the hooked wire on the lower section of the turret so the wire lays flush against the sensor.
 - Ensure you maintain a small gap between the insulation and terminal.
   - This prevents melted insulation from flowing into the solder joint.
 
