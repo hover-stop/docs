@@ -1,10 +1,18 @@
 site_name: HoverStop Documentation
 site_url: https://hover-stop.github.io/docs
 repo_url: https://github.com/hover-stop/docs
+
+# Navigation structure with detailed page listings
 nav:
   - Home: index.md
   - Technical Data: content/technical-data/index.md
-  - Build Guides: content/build-guides/index.md
+  - Build Guides:
+    - Wire Lacing Guide: content/build-guides/wire-lacing-guide.md
+    - Wire-to-Component Soldering: content/build-guides/wire-to-component-soldering.md
+    - Turret Soldering: content/build-guides/turret-soldering/23794-angle-sensor-soldering.md
+  - Design Guides:
+    - Electrical Design Guide: content/design-guides/electrical-design-guide.md
+    - Hardware Design Guide: content/design-guides/hardware-design-guide.md
   - Manuals: content/manuals/index.md
   - Brand Guidelines: content/brand-guidelines/index.md
 markdown_extensions:
