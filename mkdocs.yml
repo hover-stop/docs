@@ -30,6 +30,14 @@ theme:
     primary: "blue"
     accent: "orange"
   custom_dir: overrides
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
 extra_css:
   - assets/css/custom.css
 extra_javascript:
