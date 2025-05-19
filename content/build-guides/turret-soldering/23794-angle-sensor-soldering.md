@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Soldering Wires onto the 23794 Angle Sensor, Hall Effect
+title: Turret Soldering
 ---
 
 <details markdown="1">
