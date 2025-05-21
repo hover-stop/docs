@@ -293,7 +293,7 @@ h3 { font-size: 1.5rem; }
 .branch-indicator strong { font-weight: 600; }
 
 /* Guide card layout */
-.guides-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+.guides-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; padding-left: 2rem; padding-right: 2rem; }
 
 .guide-card { border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); }
 

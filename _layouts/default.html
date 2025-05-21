@@ -13,32 +13,54 @@
   <nav>
     <div class="nav-container">
       <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/content/technical-data/' | relative_url }}">Technical Data</a>
-      <a href="{{ '/content/build-guides/' | relative_url }}">Build Guides</a>
-      <a href="{{ '/content/manuals/' | relative_url }}">Manuals</a>
-      <a href="{{ '/content/brand-guidelines/' | relative_url }}">Brand Guidelines</a>
+      {% assign content_sections = site.pages | map: 'dir' | uniq | sort %}
+      {% for section in content_sections %}
+        {% if section contains '/content/' and section != '/content/' %}
+          <a href="{{ section | relative_url }}">{{ section | split: '/' | last | replace: '-', ' ' | capitalize }}</a>
+        {% endif %}
+      {% endfor %}
     </div>
   </nav>
   
   <div class="content-wrapper">
     {% if page.name == 'index.md' and page.path contains 'content/' and page.dir != '/content/' %}
-      <!-- Section index: only show card grid -->
-      <div class="guides-container">
-        {% assign section_pages = site.pages | where: "dir", page.dir | sort: "nav_order" %}
-        {% for child in section_pages %}
-          {% if child.name != 'index.md' %}
-          <div class="guide-card">
-            <a href="{{ child.url | relative_url }}">
-              <h3>{{ child.title }}</h3>
-              <div class="guide-meta">
-                <span class="guide-type">Guide</span>
+      <main>
+        <div class="page-content">
+          {{ content }}
+        </div>
+        <div class="guides-container">
+          {% assign section_pages = site.pages | where: "dir", page.dir | sort: "nav_order" %}
+          {% for child in section_pages %}
+            {% if child.name != 'index.md' and child.dir == page.dir %}
+              <div class="guide-card">
+                <a href="{{ child.url | relative_url }}">
+                  <h3>{{ child.title }}</h3>
+                  <div class="guide-meta">
+                    <span class="guide-type">Guide</span>
+                  </div>
+                  <div class="guide-arrow">→</div>
+                </a>
               </div>
-              <div class="guide-arrow">→</div>
-            </a>
-          </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </main>
+    {% elsif page.path == '/content/index.md' %}
+      <main>
+        <div class="page-content">
+          {{ content }}
+        </div>
+        <div class="guides-container">
+          {% assign sections = site.pages | map: 'dir' | uniq | sort %}
+          {% for section in sections %}
+            {% if section contains '/content/' and section != '/content/' %}
+              <div class="guide-card">
+                <a href="{{ section | relative_url }}">{{ section | split: '/' | last | replace: '-', ' ' | capitalize }}</a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </main>
     {% elsif page.path contains 'content/' and page.dir != '/content/' %}
       <!-- Child guide: sidebar + content in flex row -->
       <div style="display: flex;">
