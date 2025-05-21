@@ -1,0 +1,28 @@
+title: Service Documentation
+description: Troubleshooting guides for service engineers at Zipline
+author: Zipline Service Engineering Team
+theme: minima
+baseurl: ""
+url: ""
+
+# Branch indicator (for footer)
+branch: main  # This will be overridden in deployed versions
+
+# Navigation
+header_pages:
+  - index.md
+  - guides.md
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+exclude:
+  - utils/
+  - .env
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - tmp/ 

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSI Mk1 Hardware Design Guide</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="/assets/img/logo.png" alt="HoverStop Logo">
+  </header>
+  <nav>
+    <div class="nav-container">
+      <a href="/">Home</a>
+      <a href="/content/technical-data/">Technical Data</a>
+      <a href="/content/build-guides/">Build Guides</a>
+      <a href="/content/manuals/">Manuals</a>
+      <a href="/content/brand-guidelines/">Brand Guidelines</a>
+    </div>
+  </nav>
+  
+  <div class="content-wrapper">
+    
+      <!-- Child guide: sidebar + content in flex row -->
+      <div style="display: flex;">
+        <aside class="sidebar" style="position: static; height: auto; min-width: 220px; max-width: 260px; margin-right: 2rem;">
+          <h3>Design guides</h3>
+          <ul class="section-nav">
+            
+            
+              
+              <li >
+                <a href="/content/design-guides/electrical-design-guide.html">HSI Mk1 Electrical Design Guide</a>
+              </li>
+              
+            
+              
+              <li class="active">
+                <a href="/content/design-guides/hardware-design-guide.html">HSI Mk1 Hardware Design Guide</a>
+              </li>
+              
+            
+              
+            
+          </ul>
+        </aside>
+        <main class="with-sidebar" style="flex: 1;">
+          <div class="page-content">
+            <h1 id="hsi-mk1-hardware-design-guide">HSI Mk1 Hardware Design Guide</h1>
+
+<p>This guide defines how we design, document, and manage the hardware for the HoverStop project. It ensures consistency, version control, and collaboration across contributors.</p>
+
+<h2 id="units">Units</h2>
+<ul>
+  <li>All measurements and dimensions must be in <strong>millimeters (mm)</strong>.</li>
+</ul>
+
+<h2 id="repository-structure">Repository Structure</h2>
+<ul>
+  <li>All parts and assemblies are stored in the GitHub hardware repository.</li>
+  <li>Git is the <strong>single source of truth</strong> for design files and history.</li>
+</ul>
+
+<h2 id="file-structure">File Structure</h2>
+<p>Each part will live in its own folder named with a 5-digit part number:</p>
+
+<p>Example folder structure:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/12345/
+  ├── 12345-Mounting Bracket.step
+  ├── 12345-Mounting Bracket.3mf
+  ├── metadata.yaml
+  ├── REQUIREMENTS.md  # Recommended: Part-specific requirements
+  └── 12345-Mounting Bracket.pdf (drawing)
+</code></pre></div></div>
+
+<p><strong>metadata.yaml</strong> will contain:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">part_number</span><span class="pi">:</span> <span class="s2">"</span><span class="s">12345"</span> <span class="c1"># Must be a 5-digit string matching the folder name</span>
+<span class="na">owner</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Engines"</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Mounting</span><span class="nv"> </span><span class="s">Bracket</span><span class="nv"> </span><span class="s">Example"</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Steel</span><span class="nv"> </span><span class="s">bracket</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">supports</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">nozzle</span><span class="nv"> </span><span class="s">stop</span><span class="nv"> </span><span class="s">block"</span>
+<span class="na">parent_assembly</span><span class="pi">:</span> <span class="s2">"</span><span class="s">12000"</span> <span class="c1"># 5-digit part number of parent or "None"</span>
+<span class="na">status</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Release"</span> <span class="c1"># See "Status Tags" section for allowed values</span>
+<span class="na">part_type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Machined"</span> <span class="c1"># See "Part Types" section for allowed values</span>
+<span class="na">primary_source</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://mcmaster.com/1234"</span>
+<span class="na">secondary_source</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://digikey.com/xyz"</span> <span class="c1"># Can be "None yet" or similar if not applicable</span>
+<span class="na">cost</span><span class="pi">:</span> <span class="s2">"</span><span class="s">4.25"</span> <span class="c1"># Can be a number or string like "TBD"</span>
+<span class="na">quantity</span><span class="pi">:</span> <span class="m">1</span> <span class="c1"># Integer, minimum 1</span>
+<span class="na">alternatives</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Equivalent</span><span class="nv"> </span><span class="s">part</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">local</span><span class="nv"> </span><span class="s">supplier"</span>
+    <span class="na">source</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://localvendor.com/part"</span>
+<span class="na">contributors</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s2">"</span><span class="s">Engines"</span>
+  <span class="pi">-</span> <span class="s2">"</span><span class="s">Carpet3"</span>
+</code></pre></div></div>
+
+<h2 id="part-requirements-documentation-recommended">Part Requirements Documentation (Recommended)</h2>
+<p>It is highly recommended to include a <code class="language-plaintext highlighter-rouge">REQUIREMENTS.md</code> file within each part’s directory. This file should summarize the key design, functional, physical, and manufacturing requirements for that specific part.</p>
+
+<h2 id="drawing-requirements">Drawing Requirements</h2>
+<ul>
+  <li>Every <strong>part</strong> must have a detailed drawing specifying:
+    <ul>
+      <li>Dimensions</li>
+      <li>Tolerances (±0.2mm unless otherwise specified)</li>
+      <li>Critical features (holes, mounting surfaces, alignment interfaces)</li>
+    </ul>
+  </li>
+  <li>Every <strong>assembly</strong> must also include:
+    <ul>
+      <li>A complete exploded or assembled view drawing</li>
+      <li>Fastener and hardware BOM (bill of materials)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="general-design-guidance">General Design Guidance</h2>
+<ul>
+  <li>Standardize on <strong>DSUB connectors with crimped terminals</strong> as the primary option (solder cup as an alternative).</li>
+  <li>Use <strong>white 26AWG hook-up wire</strong> with heatshrink labels for harnesses.</li>
+  <li>Avoid reinventing the wheel—reuse existing parts when practical.</li>
+  <li>Use standard hardware from the shared Bitkit whenever possible.</li>
+  <li>Off-the-shelf parts must include supplier info in metadata.</li>
+</ul>
+
+<h2 id="communication">Communication</h2>
+<ul>
+  <li>All major changes, releases, and decisions are posted in Discord.</li>
+  <li>Thread-based discussions encouraged per part or topic.</li>
+  <li>New part numbers and assignments are coordinated via GitHub or Discord.</li>
+</ul>
+
+          </div>
+        </main>
+      </div>
+    
+  </div>
+
+  <script>
+    // Function to adjust sidebar height to match content
+    function adjustSidebarHeight() {
+      const sidebar = document.querySelector('.sidebar');
+      const content = document.querySelector('.content-wrapper');
+      
+      if (sidebar && content) {
+        // Set sidebar height to match content height
+        sidebar.style.height = content.offsetHeight + 'px';
+      }
+    }
+    
+    // Run on page load
+    document.addEventListener('DOMContentLoaded', adjustSidebarHeight);
+    
+    // Also run when details elements are toggled (for collapsible sections)
+    document.querySelectorAll('details').forEach(detail => {
+      detail.addEventListener('toggle', () => {
+        // Small delay to allow content to expand/collapse
+        setTimeout(adjustSidebarHeight, 50);
+      });
+    });
+    
+    // Run when window is resized
+    window.addEventListener('resize', adjustSidebarHeight);
+  </script>
+</body>
+</html>

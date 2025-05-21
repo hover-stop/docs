@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wire Lacing Guide</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="/assets/img/logo.png" alt="HoverStop Logo">
+  </header>
+  <nav>
+    <div class="nav-container">
+      <a href="/">Home</a>
+      <a href="/content/technical-data/">Technical Data</a>
+      <a href="/content/build-guides/">Build Guides</a>
+      <a href="/content/manuals/">Manuals</a>
+      <a href="/content/brand-guidelines/">Brand Guidelines</a>
+    </div>
+  </nav>
+  
+  <div class="content-wrapper">
+    
+      <!-- Child guide: sidebar + content in flex row -->
+      <div style="display: flex;">
+        <aside class="sidebar" style="position: static; height: auto; min-width: 220px; max-width: 260px; margin-right: 2rem;">
+          <h3>Build guides</h3>
+          <ul class="section-nav">
+            
+            
+              
+            
+              
+              <li >
+                <a href="/content/build-guides/turret-soldering.html">Turret Soldering</a>
+              </li>
+              
+            
+              
+              <li class="active">
+                <a href="/content/build-guides/wire-lacing-guide.html">Wire Lacing Guide</a>
+              </li>
+              
+            
+              
+              <li >
+                <a href="/content/build-guides/wire-to-component-soldering.html">General Wire-to-Component Soldering Guide</a>
+              </li>
+              
+            
+          </ul>
+        </aside>
+        <main class="with-sidebar" style="flex: 1;">
+          <div class="page-content">
+            <h1 id="wire-lacing-guide">Wire Lacing Guide</h1>
+
+<p>This guide provides instructions for wire lacing, a method of organizing and securing wire bundles using lacing cord. Wire lacing is a durable and space-efficient alternative to cable ties, commonly used in aerospace and aviation applications.</p>
+
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+  <li>Lacing cord (nylon or waxed polyester)</li>
+  <li>Scissors or a sharp knife</li>
+  <li>Heatshrink tubing (optional, for securing ends)</li>
+</ul>
+
+<h2 id="general-guidelines">General Guidelines</h2>
+<ul>
+  <li>Follow FAA AC 43.13-1B, Chapter 11 for wire lacing standards.</li>
+  <li>Use a single loop or continuous lacing pattern, depending on the application.</li>
+  <li>Avoid overtightening the lacing cord to prevent damage to the wires.</li>
+</ul>
+
+<h2 id="step-by-step-instructions">Step-by-Step Instructions</h2>
+
+<h3 id="1-prepare-the-wire-bundle">1. Prepare the Wire Bundle</h3>
+<ul>
+  <li>Group wires logically based on their destination or function.</li>
+  <li>Align the wires neatly and ensure there are no sharp bends or kinks.</li>
+</ul>
+
+<h3 id="2-start-the-lacing">2. Start the Lacing</h3>
+<ul>
+  <li>Begin at one end of the wire bundle.</li>
+  <li>Tie a secure knot (e.g., a square knot) around the bundle to anchor the lacing cord.</li>
+</ul>
+
+<h3 id="3-apply-the-lacing-pattern">3. Apply the Lacing Pattern</h3>
+<ul>
+  <li>For single loop lacing:
+    <ul>
+      <li>Wrap the cord around the bundle at regular intervals (e.g., every 25–50mm).</li>
+      <li>Tie a knot at each loop to secure it.</li>
+    </ul>
+  </li>
+  <li>For continuous lacing:
+    <ul>
+      <li>Wrap the cord in a spiral pattern along the length of the bundle.</li>
+      <li>Tie a knot at the end to secure the lacing.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="4-secure-the-ends">4. Secure the Ends</h3>
+<ul>
+  <li>Trim any excess lacing cord.</li>
+  <li>Optionally, apply heatshrink tubing over the knots for additional security.</li>
+</ul>
+
+<h3 id="5-inspect-the-lacing">5. Inspect the Lacing</h3>
+<ul>
+  <li>Ensure the lacing is tight enough to hold the wires securely but not so tight that it damages the insulation.</li>
+  <li>Check for consistent spacing and neatness.</li>
+</ul>
+
+<h2 id="tips">Tips</h2>
+<ul>
+  <li>Use contrasting lacing cord colors for easy identification of wire bundles.</li>
+  <li>Avoid lacing wires that may need frequent reconfiguration; use cable ties instead.</li>
+  <li>Document the lacing pattern and materials used for future reference.</li>
+</ul>
+
+          </div>
+        </main>
+      </div>
+    
+  </div>
+
+  <script>
+    // Function to adjust sidebar height to match content
+    function adjustSidebarHeight() {
+      const sidebar = document.querySelector('.sidebar');
+      const content = document.querySelector('.content-wrapper');
+      
+      if (sidebar && content) {
+        // Set sidebar height to match content height
+        sidebar.style.height = content.offsetHeight + 'px';
+      }
+    }
+    
+    // Run on page load
+    document.addEventListener('DOMContentLoaded', adjustSidebarHeight);
+    
+    // Also run when details elements are toggled (for collapsible sections)
+    document.querySelectorAll('details').forEach(detail => {
+      detail.addEventListener('toggle', () => {
+        // Small delay to allow content to expand/collapse
+        setTimeout(adjustSidebarHeight, 50);
+      });
+    });
+    
+    // Run when window is resized
+    window.addEventListener('resize', adjustSidebarHeight);
+  </script>
+</body>
+</html>

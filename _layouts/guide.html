@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<div class="guide-header">
+  <a href="{{ "/guides/" | relative_url }}" class="guide-back-button">← Back to Guides</a>
+  {% if page.title %}
+    <h1 class="guide-title">{{ page.title }}</h1>
+  {% endif %}
+  <div class="guide-metadata">
+    {% if page.last_modified_at %}
+      <span class="guide-date">Last updated: {{ page.last_modified_at | date: "%b %d, %Y" }}</span>
+    {% endif %}
+    <span class="guide-type">Troubleshooting Guide</span>
+  </div>
+</div>
+
+<div class="guide-content">
+  {{ content }}
+</div>
+
+<div class="guide-footer">
+  <div class="guide-nav">
+    <a href="{{ "/guides/" | relative_url }}" class="guide-back-link">← Back to All Guides</a>
+  </div>
+</div>
+
+<style>
+  .guide-header {
+    margin-bottom: 30px;
+  }
+  
+  .guide-back-button {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+    font-weight: 500;
+  }
+  
+  .guide-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .guide-metadata {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .guide-date {
+    color: #777;
+  }
+  
+  .guide-type {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  
+  .guide-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+  }
+  
+  .guide-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .guide-back-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+  }
+  
+  .guide-back-link:hover {
+    background-color: var(--secondary-color);
+    text-decoration: none;
+  }
+</style> 

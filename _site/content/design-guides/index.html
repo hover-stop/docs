@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Guides</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="/assets/img/logo.png" alt="HoverStop Logo">
+  </header>
+  <nav>
+    <div class="nav-container">
+      <a href="/">Home</a>
+      <a href="/content/technical-data/">Technical Data</a>
+      <a href="/content/build-guides/">Build Guides</a>
+      <a href="/content/manuals/">Manuals</a>
+      <a href="/content/brand-guidelines/">Brand Guidelines</a>
+    </div>
+  </nav>
+  
+  <div class="content-wrapper">
+    
+      <!-- Section index: only show card grid -->
+      <div class="guides-container">
+        
+        
+          
+          <div class="guide-card">
+            <a href="/content/design-guides/electrical-design-guide.html">
+              <h3>HSI Mk1 Electrical Design Guide</h3>
+              <div class="guide-meta">
+                <span class="guide-type">Guide</span>
+              </div>
+              <div class="guide-arrow">→</div>
+            </a>
+          </div>
+          
+        
+          
+          <div class="guide-card">
+            <a href="/content/design-guides/hardware-design-guide.html">
+              <h3>HSI Mk1 Hardware Design Guide</h3>
+              <div class="guide-meta">
+                <span class="guide-type">Guide</span>
+              </div>
+              <div class="guide-arrow">→</div>
+            </a>
+          </div>
+          
+        
+          
+        
+      </div>
+    
+  </div>
+
+  <script>
+    // Function to adjust sidebar height to match content
+    function adjustSidebarHeight() {
+      const sidebar = document.querySelector('.sidebar');
+      const content = document.querySelector('.content-wrapper');
+      
+      if (sidebar && content) {
+        // Set sidebar height to match content height
+        sidebar.style.height = content.offsetHeight + 'px';
+      }
+    }
+    
+    // Run on page load
+    document.addEventListener('DOMContentLoaded', adjustSidebarHeight);
+    
+    // Also run when details elements are toggled (for collapsible sections)
+    document.querySelectorAll('details').forEach(detail => {
+      detail.addEventListener('toggle', () => {
+        // Small delay to allow content to expand/collapse
+        setTimeout(adjustSidebarHeight, 50);
+      });
+    });
+    
+    // Run when window is resized
+    window.addEventListener('resize', adjustSidebarHeight);
+  </script>
+</body>
+</html>

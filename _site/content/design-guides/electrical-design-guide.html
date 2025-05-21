@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSI Mk1 Electrical Design Guide</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="/assets/img/logo.png" alt="HoverStop Logo">
+  </header>
+  <nav>
+    <div class="nav-container">
+      <a href="/">Home</a>
+      <a href="/content/technical-data/">Technical Data</a>
+      <a href="/content/build-guides/">Build Guides</a>
+      <a href="/content/manuals/">Manuals</a>
+      <a href="/content/brand-guidelines/">Brand Guidelines</a>
+    </div>
+  </nav>
+  
+  <div class="content-wrapper">
+    
+      <!-- Child guide: sidebar + content in flex row -->
+      <div style="display: flex;">
+        <aside class="sidebar" style="position: static; height: auto; min-width: 220px; max-width: 260px; margin-right: 2rem;">
+          <h3>Design guides</h3>
+          <ul class="section-nav">
+            
+            
+              
+              <li class="active">
+                <a href="/content/design-guides/electrical-design-guide.html">HSI Mk1 Electrical Design Guide</a>
+              </li>
+              
+            
+              
+              <li >
+                <a href="/content/design-guides/hardware-design-guide.html">HSI Mk1 Hardware Design Guide</a>
+              </li>
+              
+            
+              
+            
+          </ul>
+        </aside>
+        <main class="with-sidebar" style="flex: 1;">
+          <div class="page-content">
+            <h1 id="hsi-mk1-electrical-design-guide">HSI Mk1 Electrical Design Guide</h1>
+
+<p>This guide defines the electrical design standards and practices for the HoverStop project. It ensures consistency, reliability, and maintainability across all electrical systems.</p>
+
+<h2 id="wiring-standards">Wiring Standards</h2>
+<ul>
+  <li>Use <strong>white 26AWG hook-up wire</strong> for all harnesses.</li>
+  <li>Label wires with <strong>heatshrink labels</strong> for clear identification.</li>
+  <li>Maintain a small gap between insulation and solder joints to prevent melting into the wire.</li>
+</ul>
+
+<h2 id="connector-standards">Connector Standards</h2>
+<ul>
+  <li>Standardize on <strong>DSUB connectors with crimped terminals</strong> as the primary option.</li>
+  <li>Use <strong>solder cup DSUB connectors</strong> as an alternative when crimped terminals are not feasible.</li>
+</ul>
+
+<h2 id="soldering-guidelines">Soldering Guidelines</h2>
+<ul>
+  <li>Follow the soldering procedures outlined in the <a href="../build-guides/turret-soldering/23794-angle-sensor-soldering.md">Soldering Wires onto the 23794 Angle Sensor, Hall Effect</a> guide.</li>
+  <li>Ensure all solder joints are shiny and show a slightly concave fillet.</li>
+  <li>Clean away flux residue after soldering.</li>
+</ul>
+
+<h2 id="additional-soldering-guidelines">Additional Soldering Guidelines</h2>
+<ul>
+  <li>For general wire-to-component soldering (e.g., switches, buttons), refer to the <a href="/content/build-guides/wire-to-component-soldering.html">General Wire-to-Component Soldering Guide</a>.</li>
+  <li>Ensure all soldered connections have <strong>12–18mm of heatshrink tubing</strong> applied for insulation and strain relief.</li>
+</ul>
+
+<h2 id="harness-design">Harness Design</h2>
+<ul>
+  <li>Group wires logically and bundle them with cable ties or spiral wrap.</li>
+  <li>Avoid sharp bends or excessive strain on wires.</li>
+  <li>Test harnesses for continuity and proper connections before installation.</li>
+</ul>
+
+<h2 id="pcb-design">PCB Design</h2>
+<ul>
+  <li>Use standard footprints for connectors and components.</li>
+  <li>Include test points for critical signals.</li>
+  <li>Label all connectors and test points clearly on the silkscreen.</li>
+</ul>
+
+<h2 id="wire-lacing">Wire Lacing</h2>
+<ul>
+  <li>Follow the <a href="/content/build-guides/wire-lacing-guide.html">Wire Lacing Guide</a> for organizing and securing wire bundles.</li>
+  <li>Use lacing cord as per FAA AC 43.13-1B, Chapter 11 standards.</li>
+  <li>Avoid overtightening to prevent damage to wire insulation.</li>
+</ul>
+
+<h2 id="testing-and-validation">Testing and Validation</h2>
+<ul>
+  <li>Perform continuity tests on all harnesses and PCBs.</li>
+  <li>Use a multimeter or oscilloscope to verify signal integrity.</li>
+  <li>Document all test results and include them in the project repository.</li>
+</ul>
+
+<h2 id="communication">Communication</h2>
+<ul>
+  <li>All major changes, releases, and decisions are posted in Discord.</li>
+  <li>Thread-based discussions encouraged per part or topic.</li>
+  <li>New part numbers and assignments are coordinated via GitHub or Discord.</li>
+</ul>
+
+          </div>
+        </main>
+      </div>
+    
+  </div>
+
+  <script>
+    // Function to adjust sidebar height to match content
+    function adjustSidebarHeight() {
+      const sidebar = document.querySelector('.sidebar');
+      const content = document.querySelector('.content-wrapper');
+      
+      if (sidebar && content) {
+        // Set sidebar height to match content height
+        sidebar.style.height = content.offsetHeight + 'px';
+      }
+    }
+    
+    // Run on page load
+    document.addEventListener('DOMContentLoaded', adjustSidebarHeight);
+    
+    // Also run when details elements are toggled (for collapsible sections)
+    document.querySelectorAll('details').forEach(detail => {
+      detail.addEventListener('toggle', () => {
+        // Small delay to allow content to expand/collapse
+        setTimeout(adjustSidebarHeight, 50);
+      });
+    });
+    
+    // Run when window is resized
+    window.addEventListener('resize', adjustSidebarHeight);
+  </script>
+</body>
+</html>

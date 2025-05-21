@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Wire-to-Component Soldering Guide</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="/assets/img/logo.png" alt="HoverStop Logo">
+  </header>
+  <nav>
+    <div class="nav-container">
+      <a href="/">Home</a>
+      <a href="/content/technical-data/">Technical Data</a>
+      <a href="/content/build-guides/">Build Guides</a>
+      <a href="/content/manuals/">Manuals</a>
+      <a href="/content/brand-guidelines/">Brand Guidelines</a>
+    </div>
+  </nav>
+  
+  <div class="content-wrapper">
+    
+      <!-- Child guide: sidebar + content in flex row -->
+      <div style="display: flex;">
+        <aside class="sidebar" style="position: static; height: auto; min-width: 220px; max-width: 260px; margin-right: 2rem;">
+          <h3>Build guides</h3>
+          <ul class="section-nav">
+            
+            
+              
+            
+              
+              <li >
+                <a href="/content/build-guides/turret-soldering.html">Turret Soldering</a>
+              </li>
+              
+            
+              
+              <li >
+                <a href="/content/build-guides/wire-lacing-guide.html">Wire Lacing Guide</a>
+              </li>
+              
+            
+              
+              <li class="active">
+                <a href="/content/build-guides/wire-to-component-soldering.html">General Wire-to-Component Soldering Guide</a>
+              </li>
+              
+            
+          </ul>
+        </aside>
+        <main class="with-sidebar" style="flex: 1;">
+          <div class="page-content">
+            <h1 id="general-wire-to-component-soldering-guide">General Wire-to-Component Soldering Guide</h1>
+
+<p>This guide provides step-by-step instructions for soldering wires to components such as switches, buttons, or other non-turret terminals. Follow these steps to ensure a reliable and professional solder joint.</p>
+
+<h2 id="1-prepare--protect-the-work-area">1. Prepare &amp; Protect the Work Area</h2>
+<ul>
+  <li>Secure the component or workpiece using a vise or “helping hands” clamp to avoid movement.</li>
+  <li>Organize your materials (soldering iron, solder, flux, wire strippers, small pliers, heatshrink tubing).</li>
+  <li>Set your soldering iron to about <strong>350–375°C (660–710°F)</strong>.</li>
+</ul>
+
+<h2 id="2-strip--tin-the-wire">2. Strip &amp; Tin the Wire</h2>
+<ul>
+  <li>Strip about <strong>10–12 mm</strong> (or as required) of insulation.
+    <ul>
+      <li>Aim for a clean strip without nicking wire strands.</li>
+      <li>A thermal stripper or calibrated mechanical stripper works best.</li>
+    </ul>
+  </li>
+  <li>Apply a thin layer of flux to the exposed wire (optional but helpful).</li>
+  <li>Tin the exposed wire by heating it briefly and applying solder.
+    <ul>
+      <li>Move the wire across the iron tip from insulation toward the end and off, so solder doesn’t wick under the insulation.</li>
+      <li>Leave a small gap between the insulation and the start of the tinning.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3-prepare-the-component-terminal">3. Prepare the Component Terminal</h2>
+<ul>
+  <li>Clean the terminal with isopropyl alcohol or a small wire brush to remove any oxidation.</li>
+  <li>Apply a small amount of flux to the terminal to improve solder flow.</li>
+</ul>
+
+<h2 id="4-solder-the-connection">4. Solder the Connection</h2>
+<ul>
+  <li>Slide a piece of <strong>12–18mm heatshrink tubing</strong> onto the wire before soldering.</li>
+  <li>Position the tinned wire onto the terminal.</li>
+  <li>Touch the soldering iron to the terminal and wire, then apply a small amount of solder to form a “bridge.”
+    <ul>
+      <li>This improves heat conduction and helps solder flow around the connection.</li>
+    </ul>
+  </li>
+  <li>Feed additional solder from the opposite side of the iron.</li>
+  <li>Keep the iron in place just long enough for solder to flow and wet all surfaces.</li>
+  <li>Remove the iron with a smooth, wiping motion.</li>
+  <li>Allow the solder to solidify without moving the wire.</li>
+</ul>
+
+<h2 id="5-apply-heatshrink-tubing">5. Apply Heatshrink Tubing</h2>
+<ul>
+  <li>Slide the heatshrink tubing over the solder joint.</li>
+  <li>Use a heat gun or lighter to shrink the tubing until it fits snugly around the joint.</li>
+</ul>
+
+<h2 id="6-inspect--test">6. Inspect &amp; Test</h2>
+<ul>
+  <li>A good joint should be shiny and show a slightly concave fillet where the wire meets the terminal.
+    <ul>
+      <li>No excess lumps or large blobs—aim for “solder for inspectability.”</li>
+    </ul>
+  </li>
+  <li>Lightly tug the wire to ensure it is secure.</li>
+  <li>Test the component to ensure proper functionality.</li>
+</ul>
+
+          </div>
+        </main>
+      </div>
+    
+  </div>
+
+  <script>
+    // Function to adjust sidebar height to match content
+    function adjustSidebarHeight() {
+      const sidebar = document.querySelector('.sidebar');
+      const content = document.querySelector('.content-wrapper');
+      
+      if (sidebar && content) {
+        // Set sidebar height to match content height
+        sidebar.style.height = content.offsetHeight + 'px';
+      }
+    }
+    
+    // Run on page load
+    document.addEventListener('DOMContentLoaded', adjustSidebarHeight);
+    
+    // Also run when details elements are toggled (for collapsible sections)
+    document.querySelectorAll('details').forEach(detail => {
+      detail.addEventListener('toggle', () => {
+        // Small delay to allow content to expand/collapse
+        setTimeout(adjustSidebarHeight, 50);
+      });
+    });
+    
+    // Run when window is resized
+    window.addEventListener('resize', adjustSidebarHeight);
+  </script>
+</body>
+</html>
