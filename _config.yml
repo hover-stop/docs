@@ -2,7 +2,7 @@ title: Service Documentation
 description: Troubleshooting guides for service engineers at Zipline
 author: Zipline Service Engineering Team
 theme: minima
-baseurl: ""
+baseurl: "/docs"
 url: ""
 
 # Branch indicator (for footer)
