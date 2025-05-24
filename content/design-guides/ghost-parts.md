@@ -54,6 +54,10 @@ Ghost parts are virtual or placeholder components used in the design and assembl
 - **Inner Ghost Volume (`14619`)**: Represents the internal space constraints for the throttle body design.
 - **Outer Ghost Volume (`77875`)**: Defines the maximum external dimensions of the throttle body.
 
+### Ghost Parts Used In Drawings
+
+![Drawing showing ghost parts in use](ghost-parts.png)
+
 ## Best Practices for Using Ghost Parts
 
 1. **Clearly Document Purpose**  
