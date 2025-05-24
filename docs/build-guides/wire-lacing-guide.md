@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Wire Lacing Guide
-nav_order: 2
-parent: Build Guides
 ---
 
 # Wire Lacing Guide

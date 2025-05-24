@@ -1,0 +1,298 @@
+/* Custom CSS for HoverStop Documentation */
+
+/* Color Palette */
+:root {
+    /* Primary Palette */
+    --primary-color: #003049;
+    --secondary-color: #D62828;
+    --accent-color: #F77F00;
+    --highlight-color: #FCBF49;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    
+    /* Secondary Palette */
+    --blue-light: #8ECAE6;
+    --blue-pale: #CFE8EF;
+    --green-marine: #005E45; /* Changed from Teal Green to Royal Marine green */
+    --sand-light: #F2E8CF;
+    --terracotta: #E76F51;
+    --gray-cool: #E0E0E0;
+}
+
+/* Font-face declarations */
+@font-face {
+    font-family: 'UngapBlocks';
+    src: url('../fonts/UngapBlocks/font.woff2') format('woff2'),
+         url('../fonts/UngapBlocks/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BeneluxMedium';
+    src: url('../fonts/BeneluxMedium/font.woff2') format('woff2'),
+         url('../fonts/BeneluxMedium/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Styles */
+body {
+    font-family: 'BeneluxMedium', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content area */
+.content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 150px);
+    position: relative;
+    /* Added to ensure proper height calculation */
+    height: auto;
+}
+
+main {
+    padding: 2rem;
+    flex: 1;
+    width: 100%;
+}
+
+main.with-sidebar {
+    margin-left: 310px; /* Increased from 290px to add more space */
+    width: calc(100% - 310px);
+    padding-left: 2rem; /* Added explicit left padding for content */
+}
+
+/* Sidebar navigation */
+.sidebar {
+    width: 260px; /* Slightly reduced width to account for padding */
+    background-color: var(--blue-pale);
+    padding: 2rem 2rem 2rem 1rem; /* Increased right padding to 2rem */
+    position: absolute;
+    /* Changed to ensure sidebar extends to match content */
+    height: 100%;
+    /* Remove min-height which was causing truncation */
+    /* min-height: calc(100vh - 150px); */
+    overflow-y: auto;
+    border-right: 1px solid var(--gray-cool);
+    left: 0; /* Position at the very left edge */
+    top: 0;
+    z-index: 10;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.sidebar h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-top: 0;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.section-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-nav li {
+    margin: 0.5rem 0;
+    padding: 0.3rem 0;
+    background-color: transparent;
+}
+
+.section-nav li.active {
+    background-color: var(--blue-light);
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+}
+
+.section-nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: 0.2rem 0.5rem;
+    background-color: transparent;
+}
+
+.section-nav a:hover {
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.subsection-nav {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0.5rem 0 0;
+}
+
+.subsection-nav li {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+}
+
+/* Header styling */
+header {
+    background-color: #ffffff !important;
+    border-bottom: 4px solid var(--primary-color);
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-height: 150px; /* Increased from 50px to 150px (3x) */
+    margin-left: 2rem;
+}
+
+/* Navigation styling */
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+nav a:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+/* Typography */
+h1 {
+    font-family: 'UngapBlocks', 'Arial Black', sans-serif;
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: normal; /* Added to prevent bold rendering */
+    -webkit-text-stroke: 0; /* Remove any edge stroke if present */
+    text-shadow: none; /* Remove any text shadow */
+    letter-spacing: 0.05em; /* Add slight spacing between letters */
+    color: var(--secondary-color); /* Ensure high contrast */
+}
+
+/* Alternative styling for UngapBlocks if needed */
+.alt-header h1 {
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'BeneluxMedium', sans-serif;
+}
+
+p, li, span {
+    font-family: 'BeneluxMedium', sans-serif;
+    line-height: 1.6;
+}
+
+/* Code and pre formatting */
+code, pre {
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+
+code {
+    padding: 2px 5px;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+    line-height: 1.45;
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    
+    main.with-sidebar {
+        margin-left: 0;
+    }
+}
+
+/* Page content styling */
+.page-content h1:first-of-type {
+    margin-top: 0; /* Remove extra top margin from first heading */
+}
+
+/* Style the links in the content area */
+.page-content ul li a {
+    color: var(--green-marine); /* Use a different color for content links */
+    text-decoration: underline; /* Make them look more like content links */
+    font-weight: normal; /* Normal weight to differentiate from nav */
+}
+
+/* Make list items in content area more distinct from navigation */
+.page-content ul {
+    padding-left: 1.5rem; /* Indent the list properly */
+    margin-bottom: 1.5rem; /* Add space below lists */
+}
+
+.page-content ul li {
+    margin-bottom: 0.5rem; /* Add space between list items */
+    list-style-type: disc; /* Use bullet points for lists */
+}
+
+/* Hide duplicate navigation links that appear in content */
+.page-content ul li a[href$="/basic-throttle/"],
+.page-content ul li a[href$="/advanced-throttle/"] {
+    text-decoration: none; /* Keep links visible but style them differently */
+    color: var(--green-marine);
+}

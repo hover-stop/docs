@@ -2,33 +2,11 @@ site_name: HoverStop Documentation
 site_url: https://hover-stop.github.io/docs
 repo_url: https://github.com/hover-stop/docs
 
-# Navigation structure with detailed page listings
-nav:
-  - Home: index.md
-  - Technical Data: content/technical-data/index.md
-  - Build Guides:
-    - Wire Lacing Guide: content/build-guides/wire-lacing-guide.md
-    - Wire-to-Component Soldering: content/build-guides/wire-to-component-soldering.md
-    - Turret Soldering: content/build-guides/turret-soldering/23794-angle-sensor-soldering.md
-  - Design Guides:
-    - Electrical Design Guide: content/design-guides/electrical-design-guide.md
-    - Hardware Design Guide: content/design-guides/hardware-design-guide.md
-  - Manuals: content/manuals/index.md
-  - Brand Guidelines: content/brand-guidelines/index.md
-markdown_extensions:
-  - toc:
-      permalink: true
-  - tables
-  - admonition
-  - codehilite
-  - footnotes
-  - meta
-  - attr_list
 theme:
   name: material
   palette:
-    primary: "blue"
-    accent: "orange"
+    primary: blue
+    accent: orange
   custom_dir: overrides
   features:
     - navigation.instant
@@ -38,17 +16,37 @@ theme:
     - navigation.expand
     - navigation.indexes
     - toc.follow
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - attr_list
+
 extra_css:
   - assets/css/custom.css
 extra_javascript:
   - assets/js/custom.js
+
 use_directory_urls: true
 
-# Ensure assets are correctly copied to the site directory
-docs_dir: .
-site_dir: site
-exclude_docs: |
-  _site/
-  content/brand guidelines/
-  content/build guides/
-  content/technical data/
+docs_dir: ./docs
+site_dir: ./site
+
+nav:
+  - Home: index.md
+  - Build Guides:
+      - Overview: build-guides/index.md
+      - Wire Lacing Guide: build-guides/wire-lacing-guide.md
+      - Wire-to-Component Soldering: build-guides/wire-to-component-soldering.md
+      - Turret Soldering: build-guides/turret-soldering.md
+  - Design Guides:
+      - Electrical Design Guide: design-guides/electrical-design-guide.md
+      - Hardware Design Guide: design-guides/hardware-design-guide.md
+  - Technical Data: technical-data/index.md
+  - Manuals: manuals/index.md
+  - Brand Guidelines: brand-guidelines/index.md

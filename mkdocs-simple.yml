@@ -1,0 +1,20 @@
+﻿site_name: HoverStop Documentation
+site_url: https://hover-stop.github.io/docs
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+docs_dir: docs
+site_dir: site
+nav:
+  - Home: index.md
+  - Build Guides:
+    - Overview: build-guides/index.md
+    - Wire Lacing Guide: build-guides/wire-lacing-guide.md
+    - Wire-to-Component Soldering: build-guides/wire-to-component-soldering.md
+    - Turret Soldering: build-guides/turret-soldering.md
+  - Design Guides:
+    - Electrical Design Guide: design-guides/electrical-design-guide.md
+    - Hardware Design Guide: design-guides/hardware-design-guide.md

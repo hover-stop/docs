@@ -1,15 +1,14 @@
 {% extends "base.html" %}
 
-{% block styles %}
-    {{ super() }}
-    <style>
-        /* Inline a basic style to ensure something applies */
-        body {
-            background-color: #e0f7fa !important;
-        }
-    </style>
-    <link rel="stylesheet" href="https://hover-stop.github.io/docs/assets/css/custom.css">
-    <link rel="stylesheet" href="https://hover-stop.github.io/docs/assets/css/test.css">
+{% block extrahead %}
+  <link rel="stylesheet" href="{{ 'assets/css/custom.css'|url }}">
+  <link rel="stylesheet" href="{{ 'assets/css/test.css'|url }}">
+  <style>
+    /* Inline a basic style to ensure something applies */
+    body {
+      background-color: #e0f7fa !important;
+    }
+  </style>
 {% endblock %}
 
 {% block header %}

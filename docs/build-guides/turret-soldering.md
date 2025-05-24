@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Turret Soldering
-nav_order: 4
-parent: Build Guides
 ---
 
 <details markdown="1">

@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Wire-to-Component Soldering Guide
-nav_order: 3
-parent: Build Guides
 ---
 
 # General Wire-to-Component Soldering Guide
