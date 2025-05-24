@@ -71,6 +71,6 @@ This guide provides step-by-step instructions for soldering wires onto the turre
 ### Tip
 If you must solder multiple wires onto the same turret, keep them stacked with insulation contacting each other. Leave the required insulation gap to avoid melting into the wire. Always heat, apply solder, and remove the iron in one motion—this reduces the chance of a cold joint.
 
-## Refreence Material
+## Reference Material
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Mrhg5A1a1mU?si=qkahx3AT1ga_BiSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
